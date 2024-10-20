@@ -1,5 +1,3 @@
-/* get iconList Function */
-
 const iconTech = [
   {
     id: 1,
@@ -80,7 +78,6 @@ const iconTech = [
 
 const getIconList = () => {
   const iconList = document.getElementById("icon");
-
   for (let i = 0; i < iconTech.length; i++) {
     const newImageList = document.createElement("img");
     const listItem = document.createElement("li");
@@ -88,16 +85,14 @@ const getIconList = () => {
     const imgUrl = listImage.url;
     newImageList.src = imgUrl;
     listItem.appendChild(newImageList);
+
     iconList.appendChild(listItem);
   }
 };
 
 getIconList();
 
-/* end of getIconList Function */
-
-/* get date function */
-
+// date
 const weekdayList = [
   "Sunday",
   "Monday",
@@ -138,9 +133,7 @@ const dateTes = () => {
 
 dateTes();
 
-/* end of date function */
-
-/* Hamburger Nav function */
+/* Hamburger Nav */
 
 const menuList = document.getElementById("menu-list");
 const hamMenu = document.getElementById("ham-menu");
@@ -161,9 +154,7 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   })
 );
 
-/* end of humberger function */
-
-/* funtion alert to showcase button */
+/* end of humberger */
 
 const buttonMore = document.getElementById("button-more");
 buttonMore.addEventListener("click", () => {
@@ -172,9 +163,7 @@ buttonMore.addEventListener("click", () => {
   );
 });
 
-/* end of alert function */
-
-/* function to show data table list */
+/* card content */
 
 const dataShowcase = [
   {
@@ -182,25 +171,25 @@ const dataShowcase = [
     name: "Karangsuci Page",
     tools: "NextJS, Typescript, & Tailwind CSS",
     info: "I'm diving headfirst into the world of professional web development with my first company profile website! I'm using powerful tools like Next.js, TypeScript, and Tailwind CSS to build it quickly and efficiently. This project is still in progress, and I'm excited to add a content management system to make it even more dynamic.",
-    image: "assets/Icon/Showcase/karangsuci.png",
+    image: "Assets/Icon/Showcase/karangsuci.png",
     demo: "https://karangsuci-landing.pages.dev",
     repo: "",
   },
   {
     id: 2,
-    name: "Fender Landing Page",
-    info: "This project, my first foray into HTML and CSS, showcases a simple landing page for Fender. It features a visually appealing design, prominently displaying a guitar image that highlights the brand's iconic instrument.",
-    tools: "HTML, & CSS",
-    image: "assets/Icon/Showcase/fender.png",
-    demo: "https://febryanhernanda-showcase.github.io/Landing-Page/",
-    repo: "https://github.com/FebryanHernanda-Showcase/Landing-Page",
+    name: "Bookshelf Apps",
+    info: "This project, my first foray into HTML, CSS, and JavaScript, showcases a simple Bookshelf App. It features a clean and user-friendly design, allowing users to manage their book collections effortlessly, with a focus on smooth functionality and visual appeal.",
+    tools: "HTML, CSS, & Javascript",
+    image: "Assets/Icon/Showcase/Bookshelf.png",
+    demo: "https://febryanhernanda-showcase.github.io/Bookshelf-Apps/",
+    repo: "https://github.com/FebryanHernanda-Showcase/Bookshelf-Apps",
   },
   {
     id: 3,
     name: "Palindrom Checker",
     info: "My second project, built with HTML, CSS, and JavaScript, lets you explore the magic of palindromes. Simply enter any word or sentence, and the program will reveal whether it's a palindrome!",
     tools: "HTML, CSS, & Javascript",
-    image: "assets/Icon/Showcase/palindrom.png",
+    image: "Assets/Icon/Showcase/palindrom.png",
     demo: "https://febryanhernanda-showcase.github.io/Palindrom-Checker/",
     repo: "https://github.com/FebryanHernanda-Showcase/Palindrom-Checker",
   },
@@ -272,4 +261,4 @@ liveDemoLink.addEventListener("click", (e) => {
   }
 });
 
-/* end of function show data list */
+/* end of card content */
