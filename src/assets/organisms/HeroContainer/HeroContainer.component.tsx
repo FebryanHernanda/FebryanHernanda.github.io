@@ -13,7 +13,7 @@ Functional Websites"
           Type="headline"
         />
         <Title
-          Label="As a Front-End Developer with a focus on UI/UX design, I build visually appealing and user-friendly websites and applications that empower businesses to elevate user satisfaction, increase engagement, and drive digital innovation"
+          Label="As a Front-End Developer with a focus on UI/UX design, I build visually appealing and user-friendly websites and applications that empower businesses to elevate user satisfaction, increase engagement, and drive digital innovation."
           Type="subHeadline"
         />
       </div>

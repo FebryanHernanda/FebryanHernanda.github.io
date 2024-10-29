@@ -1,2 +1,3 @@
 export * from "./ContactLogoSection";
-export * from "../molecules/ProfileCard";
+export * from "./ProfileCard";
+export * from "./CardShowcase";

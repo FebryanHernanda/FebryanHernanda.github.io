@@ -1,4 +1,12 @@
 export type Props = {
   Label: string;
-  Type: "Bold" | "Regular" | "subHeadline" | "headline";
+  Type:
+    | "Bold"
+    | "semiBold"
+    | "Regular"
+    | "subHeadline"
+    | "headline"
+    | "subTitle"
+    | "cardTitle"
+    | "cardSubTitle";
 };

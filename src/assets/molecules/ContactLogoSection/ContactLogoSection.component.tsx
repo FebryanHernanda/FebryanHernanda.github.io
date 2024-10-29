@@ -8,14 +8,14 @@ const ContactLogoSection = () => {
 
   return (
     <div className={styleConfig.wrapper}>
-      <ContactLogo imgUrl="src/img/Icon/mail.png" alt="Email" target={email} />
+      <ContactLogo imgUrl="img/Icon/mail.png" alt="Email" target={email} />
       <ContactLogo
-        imgUrl="src/img/Icon/linkedin.png"
+        imgUrl="img/Icon/linkedin.png"
         alt="Linkedin"
         target={linkedin}
       />
       <ContactLogo
-        imgUrl="src/img/Icon/whatsapp.png"
+        imgUrl="img/Icon/whatsapp.png"
         alt="Whatsapps"
         target={whatsapp}
       />

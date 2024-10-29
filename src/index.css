@@ -62,6 +62,6 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-color: #efefef;
+    background-color: white;
   }
 }
