@@ -7,7 +7,11 @@ const FooterContainer = () => {
   return (
     <div className={styleConfig.container}>
       <div className={styleConfig.leftWrapper}>
-        <img src="../FH-Logo.svg" alt="" className={styleConfig.imgStyle} />
+        <img
+          src="img/FHLogo.png"
+          alt="Febryan Hernanda Logo"
+          className={styleConfig.imgStyle}
+        />
         <div className={styleConfig.fullNameStyle}>
           <Title Label="Febryan" Type="Regular" />
           <Title Label="Hernanda" Type="Regular" />
