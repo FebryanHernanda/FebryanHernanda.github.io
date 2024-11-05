@@ -11,10 +11,12 @@ import {
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <HeroSection />
-    <ShowcaseSection />
-    <ServicesSection />
-    <ContactSection />
-    <FooterSection />
+    <div className="max-w-[1600px] mx-auto">
+      <HeroSection />
+      <ShowcaseSection />
+      <ServicesSection />
+      <ContactSection />
+      <FooterSection />
+    </div>
   </StrictMode>
 );

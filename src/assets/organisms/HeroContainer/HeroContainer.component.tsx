@@ -5,6 +5,13 @@ import { styleConfig } from "./HeroContainer.config";
 const HeroContainer = () => {
   return (
     <div className={styleConfig.wrapper}>
+      <video
+        src="/hero.mp4"
+        loop
+        muted
+        autoPlay
+        className={styleConfig.video}
+      />
       <ProfileCard />
       <div className={styleConfig.headline}>
         <Title
@@ -18,7 +25,11 @@ Functional Websites"
         />
       </div>
       <div className={styleConfig.subtitle}>
-        <Title Label="Available for full-time position" Type="subHeadline" />
+        <Title
+          Label="Available for full-time position"
+          Type="Regular"
+          className="font-bold"
+        />
       </div>
     </div>
   );

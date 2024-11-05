@@ -4,6 +4,7 @@ export type Props = {
   titleContent: string;
   descContent: string;
   linkDemo: string;
+  category: string;
   tools: TechLogo[];
 };
 

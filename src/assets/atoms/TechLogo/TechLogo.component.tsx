@@ -7,7 +7,7 @@ const TechLogo = (props: Props) => {
   return (
     <div className={styleConfig.container}>
       <img src={src} alt={description} className={styleConfig.logo} />
-      <Title Label={label} Type="Bold" />
+      <Title Label={label} Type="semiBold" />
     </div>
   );
 };

@@ -3,9 +3,9 @@ import { styleConfig } from "./HeroSection.config";
 
 const HeroSection = () => {
   return (
-    <div className={styleConfig.container}>
+    <section id="Hero" className={styleConfig.container}>
       <HeroContainer />
-    </div>
+    </section>
   );
 };
 

@@ -1,101 +1,95 @@
 const ShowcaseData = [
   {
-    media:
-      "https://miro.medium.com/v2/resize:fit:916/1*z2BaY_MTgmcjgLfNyGQJ4g.png",
+    media: "../img/showcase1.png",
     mediaAlt: "Karangsuci",
-    titleContent: "Karangsuci Landing Page",
-    descContent: "A company profile about KarangSuci",
-    linkDemo: "https://www.youtube.com/watch?v=g0PITtwIPiY",
+    titleContent: "Karangsuci Company Profile",
+    category: "Web Development",
+    descContent:
+      "A concise overview of Karangsuci, showcasing our company profile and core values!",
+    linkDemo: "https://karangsuci.com",
     tools: [
       {
-        src: "https://cdn-icons-png.flaticon.com/512/732/732190.png",
+        src: "../img/Icon/nextjs.png",
         description: "CSS Icon",
-        label: "CSS",
+        label: "NextJS",
       },
       {
-        src: "https://e7.pngegg.com/pngimages/780/934/png-clipart-html-logo-html5-logo-icons-logos-emojis-tech-companies-thumbnail.png",
+        src: "../img/Icon/ts.png",
         description: "Html Icon",
-        label: "HTML",
+        label: "Typescript",
       },
       {
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlGmKtrnxElpqw3AExKXPWWBulcwjlvDJa1Q&s",
+        src: "../img/Icon/tailwind.png",
         description: "ReactJs Icon",
-        label: "ReactJs",
+        label: "TailwindCSS",
       },
     ],
   },
   {
-    media:
-      "https://miro.medium.com/v2/resize:fit:916/1*z2BaY_MTgmcjgLfNyGQJ4g.png",
-    mediaAlt: "Karangsuci",
-    titleContent: "Karangsuci Landing Page",
-    descContent: "A company profile about KarangSuci",
-    linkDemo: "https://www.youtube.com/watch?v=g0PITtwIPiY",
+    media: "../img/showcase2.png",
+    mediaAlt: "Bookshelf Apps",
+    titleContent: "Bookshelf Apps",
+    category: "Web Development",
+    descContent:
+      "A user-friendly app for organizing, tracking, and managing your personal book collection effortlessly.",
+    linkDemo: "https://febryanhernanda-showcase.github.io/Bookshelf-Apps/",
     tools: [
       {
-        src: "https://cdn-icons-png.flaticon.com/512/732/732190.png",
+        src: "../img/Icon/html.png",
         description: "CSS Icon",
-        label: "CSS",
-      },
-      {
-        src: "https://e7.pngegg.com/pngimages/780/934/png-clipart-html-logo-html5-logo-icons-logos-emojis-tech-companies-thumbnail.png",
-        description: "Html Icon",
         label: "HTML",
       },
       {
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlGmKtrnxElpqw3AExKXPWWBulcwjlvDJa1Q&s",
+        src: "../img/Icon/css.png",
+        description: "Html Icon",
+        label: "CSS",
+      },
+      {
+        src: "../img/Icon/js.png",
         description: "ReactJs Icon",
-        label: "ReactJs",
+        label: "Javascript",
       },
     ],
   },
   {
-    media:
-      "https://miro.medium.com/v2/resize:fit:916/1*z2BaY_MTgmcjgLfNyGQJ4g.png",
+    media: "../img/showcase3.png",
     mediaAlt: "Karangsuci",
-    titleContent: "Karangsuci Landing Page",
-    descContent: "A company profile about KarangSuci",
-    linkDemo: "https://www.youtube.com/watch?v=g0PITtwIPiY",
+    titleContent: "Palindrome Checker",
+    category: "Web Development",
+    descContent:
+      "Easily determine if a word, phrase, or number is a palindrome with our simple and intuitive online tool.",
+    linkDemo: "https://febryanhernanda-showcase.github.io/Palindrom-Checker/",
     tools: [
       {
-        src: "https://cdn-icons-png.flaticon.com/512/732/732190.png",
+        src: "../img/Icon/html.png",
         description: "CSS Icon",
-        label: "CSS",
-      },
-      {
-        src: "https://e7.pngegg.com/pngimages/780/934/png-clipart-html-logo-html5-logo-icons-logos-emojis-tech-companies-thumbnail.png",
-        description: "Html Icon",
         label: "HTML",
       },
       {
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlGmKtrnxElpqw3AExKXPWWBulcwjlvDJa1Q&s",
+        src: "../img/Icon/css.png",
+        description: "Html Icon",
+        label: "CSS",
+      },
+      {
+        src: "../img/Icon/js.png",
         description: "ReactJs Icon",
-        label: "ReactJs",
+        label: "Javascript",
       },
     ],
   },
   {
-    media:
-      "https://miro.medium.com/v2/resize:fit:916/1*z2BaY_MTgmcjgLfNyGQJ4g.png",
+    media: "../img/showcase4.png",
     mediaAlt: "Karangsuci",
-    titleContent: "Karangsuci Landing Page",
-    descContent: "A company profile about KarangSuci",
-    linkDemo: "https://www.youtube.com/watch?v=g0PITtwIPiY",
+    titleContent: "Garuda Muda Poster",
+    category: "Graphic Design",
+    descContent:
+      "A concise overview of Karangsuci, showcasing our company profile and core values!",
+    linkDemo: "https://www.instagram.com/p/CTEfHc0pUFY/",
     tools: [
       {
-        src: "https://cdn-icons-png.flaticon.com/512/732/732190.png",
-        description: "CSS Icon",
-        label: "CSS",
-      },
-      {
-        src: "https://e7.pngegg.com/pngimages/780/934/png-clipart-html-logo-html5-logo-icons-logos-emojis-tech-companies-thumbnail.png",
-        description: "Html Icon",
-        label: "HTML",
-      },
-      {
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlGmKtrnxElpqw3AExKXPWWBulcwjlvDJa1Q&s",
-        description: "ReactJs Icon",
-        label: "ReactJs",
+        src: "../img/Icon/photoshop.png",
+        description: "Adobe Photoshop",
+        label: "Adobe Photoshop",
       },
     ],
   },
@@ -104,7 +98,7 @@ const ShowcaseData = [
 const styleConfig = {
   container: "flex flex-wrap gap-10 p-5 xl:flex-nowrap md:p-10",
   textWrapper:
-    "text-center text-[50px] px-5 mt-[-20px] flex gap-2 flex-col w-full xl:sticky xl:top-0 h-full xl:w-[700px] xl:text-left",
+    "text-center text-[50px] px-5 mt-[-20px] flex gap-2 flex-col w-full h-full xl:w-[700px] xl:text-left xl:sticky xl:top-0",
   mediaWrapper: "flex flex-wrap w-full justify-between gap-10",
 };
 

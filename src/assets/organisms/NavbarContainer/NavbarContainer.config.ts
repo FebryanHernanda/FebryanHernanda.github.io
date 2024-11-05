@@ -1,0 +1,3 @@
+const styleConfing: {};
+
+export { styleConfing };

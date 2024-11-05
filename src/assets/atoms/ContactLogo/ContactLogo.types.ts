@@ -1,5 +1,7 @@
 export type Props = {
-  imgUrl: string;
-  alt: string;
+  children: React.ReactNode;
+  type: typeStyle;
   target: string;
 };
+
+export type typeStyle = "avatarNav" | "avatarFooter";

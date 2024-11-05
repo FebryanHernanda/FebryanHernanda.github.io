@@ -1,7 +1,8 @@
 const styleConfig = {
-  avatar:
-    "bg-white rounded-full p-[10px] w-10 h-10 hover:bg-gray-200 transition-all",
-  logo: "w-7 mx-auto ",
+  avatarNav:
+    "rounded-full flex items-center justify-center w-10 h-10 hover:bg-[#c4c4c4] transition-all",
+  avatarFooter:
+    "rounded-full flex items-center justify-center w-10 h-10 hover:bg-[#c4c4c4] transition-all",
 };
 
 export { styleConfig };

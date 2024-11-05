@@ -3,9 +3,9 @@ import { styleConfig } from "./ServicesSection.config";
 
 const ServicesSection = () => {
   return (
-    <div className={styleConfig.container}>
+    <section id="Services" className={styleConfig.container}>
       <ServicesContainer />
-    </div>
+    </section>
   );
 };
 

@@ -2,12 +2,12 @@ import { styleConfig } from "./ContactLogo.config";
 import { Props } from "./ContactLogo.types";
 
 const ContactLogo = (props: Props) => {
-  const { imgUrl, alt, target } = props;
+  const { children, target, type } = props;
 
   return (
-    <div className={styleConfig.avatar}>
+    <div className={styleConfig[type]}>
       <a href={target} target="_blank">
-        <img src={imgUrl} alt={alt} className={styleConfig.logo} />
+        {children}
       </a>
     </div>
   );

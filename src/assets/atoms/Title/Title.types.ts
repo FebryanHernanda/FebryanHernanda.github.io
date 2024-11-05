@@ -9,4 +9,5 @@ export type Props = {
     | "subTitle"
     | "cardTitle"
     | "cardSubTitle";
+  className?: string;
 };

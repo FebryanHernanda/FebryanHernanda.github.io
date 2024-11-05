@@ -1,6 +1,7 @@
 import { Title } from "@/assets/atoms";
 import { ContactLogoSection } from "@/assets/molecules";
 import { styleConfig } from "./FooterContainer.config";
+import { ResumeDownload } from "@/assets/features";
 
 const FooterContainer = () => {
   return (
@@ -20,13 +21,8 @@ const FooterContainer = () => {
         </span>
       </div>
       <div className={styleConfig.rightWrapper}>
-        <ContactLogoSection />
-        <a
-          href="../FebryanHernanda-Resume.pdf"
-          download="Febryan Hernanda CV.pdf"
-        >
-          <Title Label="Download CV" Type="semiBold" />
-        </a>
+        <ContactLogoSection type="avatarFooter" />
+        <ResumeDownload variant="link" />
       </div>
     </div>
   );

@@ -1,10 +1,13 @@
 import { Title } from "@/assets/atoms";
+import { DialogProfile } from "@/assets/molecules";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogTrigger } from "@/components/ui/dialog";
+import { FormContactTrigger } from "@/assets/features";
 import { styleConfig } from "./ContactSection.config";
 
 const ContactSection = () => {
   return (
-    <div className={styleConfig.container}>
+    <section id="Contact" className={styleConfig.container}>
       <div className={styleConfig.textWrapper}>
         <Title Label="Let's Connect With Me" Type="Bold" />
         <Title
@@ -13,10 +16,18 @@ const ContactSection = () => {
         />
       </div>
       <div className={styleConfig.buttonWrapper}>
-        <Button variant="secondary">Discuss Our Project</Button>
-        <Button variant="secondary">More about me !</Button>
+        {/* using Trigger for FormContact */}
+        <FormContactTrigger />
+        <Dialog>
+          <DialogTrigger asChild>
+            <Button variant="outline" className={styleConfig.button}>
+              About me
+            </Button>
+          </DialogTrigger>
+          <DialogProfile />
+        </Dialog>
       </div>
-    </div>
+    </section>
   );
 };
 
