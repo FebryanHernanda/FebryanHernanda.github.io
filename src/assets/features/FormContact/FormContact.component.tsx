@@ -61,7 +61,9 @@ const FormContact = (props: SubmitProps) => {
       onSubmit={handleSubmit}
       className={styleConfig.formStyle}
     >
-      <label htmlFor="Fullname">Full Name </label>
+      <label htmlFor="Fullname" className={styleConfig.label}>
+        Full Name
+      </label>
       <input
         type="text"
         placeholder="Enter your name (e.g. Febryan Hernanda)"
@@ -71,7 +73,9 @@ const FormContact = (props: SubmitProps) => {
         required
         className={styleConfig.inputField}
       />
-      <label htmlFor="Email">Email</label>
+      <label htmlFor="Email" className={styleConfig.label}>
+        Email
+      </label>
       {errors.Email && (
         <p className={styleConfig.errorMessage}>{errors.Email}</p>
       )}
@@ -84,7 +88,9 @@ const FormContact = (props: SubmitProps) => {
         required
         className={styleConfig.inputField}
       />
-      <label htmlFor="Whatsapp Number">Whatsapp Number</label>
+      <label htmlFor="Whatsapp Number" className={styleConfig.label}>
+        Whatsapp Number
+      </label>
       {errors.PhoneNumber && (
         <p className={styleConfig.errorMessage}>{errors.PhoneNumber}</p>
       )}
@@ -97,7 +103,9 @@ const FormContact = (props: SubmitProps) => {
         required
         className={styleConfig.inputField}
       />
-      <label htmlFor="Project Details">Project Details</label>
+      <label htmlFor="Project Details " className={styleConfig.label}>
+        Project Details
+      </label>
       <textarea
         placeholder="Briefly describe your short project details (e.g. personal website, mobile app, etc.)"
         rows={5}

@@ -1,6 +1,6 @@
 const styleConfig = {
-  container: "flex gap-1 items-center text-xs ",
-  logo: "w-6",
+  container: "flex gap-[5px] items-center text-[10px] ",
+  logo: "w-5",
 };
 
 export { styleConfig };

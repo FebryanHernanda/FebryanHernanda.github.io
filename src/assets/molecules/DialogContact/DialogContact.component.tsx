@@ -70,7 +70,7 @@ const DialogContact = (props: TriggerProps) => {
         {isLoading ? (
           <Skeleton className={styleConfig.showMessage} />
         ) : showMessage ? (
-          <div className="">
+          <div className={styleConfig.showMessage}>
             Thank you! I’ve received your message and will get back to you soon.
           </div>
         ) : errorMessages ? (

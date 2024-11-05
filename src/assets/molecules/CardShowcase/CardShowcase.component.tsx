@@ -35,7 +35,7 @@ const CardShowcase = (props: Props) => {
       </Tilt>
       <div className={styleConfig.titleSize}>
         <Title Label={titleContent} Type="Bold" />
-        <div className="flex gap-5 items-center mt-2">
+        <div className="flex gap-3 items-center mt-2">
           <Badge variant="outline" className="text-[10px] sm:text-none">
             {category}
           </Badge>

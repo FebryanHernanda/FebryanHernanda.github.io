@@ -7,7 +7,7 @@ const ResumeDownload = (props: Props) => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const link = document.createElement("a");
-    link.href = "../FebryanHernanda-Resume.pdf";
+    link.href = "img/FebryanHernanda-Resume.pdf";
     link.setAttribute("download", "Febryan Hernanda CV.pdf");
     link.dispatchEvent(new MouseEvent("click"));
   };
