@@ -6,7 +6,7 @@ const HeroContainer = () => {
   return (
     <div className={styleConfig.wrapper}>
       <video
-        src="/hero.mp4"
+        src="public/hero.mp4"
         loop
         muted
         autoPlay

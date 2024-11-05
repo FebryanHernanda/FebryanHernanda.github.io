@@ -1,6 +1,6 @@
 const ShowcaseData = [
   {
-    media: "../img/showcase1.png",
+    media: "public/img/showcase1.png",
     mediaAlt: "Karangsuci",
     titleContent: "Karangsuci Company Profile",
     category: "Web Development",
@@ -9,24 +9,24 @@ const ShowcaseData = [
     linkDemo: "https://karangsuci.com",
     tools: [
       {
-        src: "../img/Icon/nextjs.png",
+        src: "public/img/Icon/nextjs.png",
         description: "CSS Icon",
         label: "NextJS",
       },
       {
-        src: "../img/Icon/ts.png",
+        src: "public/img/Icon/ts.png",
         description: "Html Icon",
         label: "Typescript",
       },
       {
-        src: "../img/Icon/tailwind.png",
+        src: "public/img/Icon/tailwind.png",
         description: "ReactJs Icon",
         label: "TailwindCSS",
       },
     ],
   },
   {
-    media: "../img/showcase2.png",
+    media: "public/img/showcase2.png",
     mediaAlt: "Bookshelf Apps",
     titleContent: "Bookshelf Apps",
     category: "Web Development",
@@ -35,24 +35,24 @@ const ShowcaseData = [
     linkDemo: "https://febryanhernanda-showcase.github.io/Bookshelf-Apps/",
     tools: [
       {
-        src: "../img/Icon/html.png",
+        src: "public/img/Icon/html.png",
         description: "CSS Icon",
         label: "HTML",
       },
       {
-        src: "../img/Icon/css.png",
+        src: "public/img/Icon/css.png",
         description: "Html Icon",
         label: "CSS",
       },
       {
-        src: "../img/Icon/js.png",
+        src: "public/img/Icon/js.png",
         description: "ReactJs Icon",
         label: "Javascript",
       },
     ],
   },
   {
-    media: "../img/showcase3.png",
+    media: "public/img/showcase3.png",
     mediaAlt: "Karangsuci",
     titleContent: "Palindrome Checker",
     category: "Web Development",
@@ -61,24 +61,24 @@ const ShowcaseData = [
     linkDemo: "https://febryanhernanda-showcase.github.io/Palindrom-Checker/",
     tools: [
       {
-        src: "../img/Icon/html.png",
+        src: "public/img/Icon/html.png",
         description: "CSS Icon",
         label: "HTML",
       },
       {
-        src: "../img/Icon/css.png",
+        src: "public/img/Icon/css.png",
         description: "Html Icon",
         label: "CSS",
       },
       {
-        src: "../img/Icon/js.png",
+        src: "public/img/Icon/js.png",
         description: "ReactJs Icon",
         label: "Javascript",
       },
     ],
   },
   {
-    media: "../img/showcase4.png",
+    media: "public/img/showcase4.png",
     mediaAlt: "Karangsuci",
     titleContent: "Garuda Muda Poster",
     category: "Graphic Design",
@@ -87,7 +87,7 @@ const ShowcaseData = [
     linkDemo: "https://www.instagram.com/p/CTEfHc0pUFY/",
     tools: [
       {
-        src: "../img/Icon/photoshop.png",
+        src: "public/img/Icon/photoshop.png",
         description: "Adobe Photoshop",
         label: "Adobe Photoshop",
       },
