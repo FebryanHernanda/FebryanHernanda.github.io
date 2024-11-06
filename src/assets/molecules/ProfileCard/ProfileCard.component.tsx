@@ -25,7 +25,7 @@ const ProfileCard = () => {
       <div className={styleConfig.wrapper}>
         <div className={styleConfig.avatar}>
           <Avatar>
-            <AvatarImage src="img/ava.png" />
+            <AvatarImage src="img/ava.png" alt="profile picture" />
             <AvatarFallback>Profile Picture</AvatarFallback>
           </Avatar>
         </div>
@@ -44,7 +44,7 @@ const ProfileCard = () => {
               <SheetHeader>
                 <div className={styleConfig.avatarSide}>
                   <Avatar>
-                    <AvatarImage src="img/ava.png" />
+                    <AvatarImage src="img/ava.png" alt="profile picture" />
                     <AvatarFallback>Profile Picture</AvatarFallback>
                   </Avatar>
                 </div>

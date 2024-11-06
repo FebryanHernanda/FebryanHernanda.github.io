@@ -4,9 +4,9 @@ const styleConfig = {
   Regular: "font-light text-wrap",
   subHeadline: "italic",
   headline: "text-[60px] font-bold",
-  subTitle: "text-[15px] text-gray-500",
+  subTitle: "text-[15px] font-light",
   cardTitle: "text-3xl font-bold",
-  cardSubTitle: "text-md text-gray-500",
+  cardSubTitle: "text-md font-lgiht",
 };
 
 export { styleConfig };
