@@ -21,7 +21,7 @@ const ShowcaseData = [
       {
         src: "img/Icon/tailwind.png",
         description: "ReactJs Icon",
-        label: "TailwindCSS",
+        label: "Tailwind",
       },
     ],
   },
