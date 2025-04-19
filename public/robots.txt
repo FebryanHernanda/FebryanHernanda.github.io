@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://febryanhernanda.github.io/sitemap.xml
