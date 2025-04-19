@@ -27,7 +27,7 @@ Functional Websites"
       <div className={styleConfig.subtitle}>
         <Title
           Label="Available for full-time position"
-          Type="Subtitle"
+          Type="subTitle"
           className="font-bold"
         />
       </div>
