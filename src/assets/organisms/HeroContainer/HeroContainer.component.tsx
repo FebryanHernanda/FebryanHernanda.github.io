@@ -25,6 +25,7 @@ Functional Websites"
         />
       </div>
       <div className={styleConfig.subtitle}>
+        <span className="fancy-pulse"></span>
         <Title
           Label="Available for full-time position"
           Type="subTitle"
