@@ -3,7 +3,7 @@ const styleConfig = {
   imageStyle: "w-full h-full object-cover",
   titleSize: "text-3xl",
   subTitileSize: "text-md",
-  toolsWrapper: "flex flex-row items-center gap-2 mt-[-10px]",
+  toolsWrapper: "flex flex-row items-center gap-2 max-[320px]:mt-[-10px]",
 };
 
 export { styleConfig };
