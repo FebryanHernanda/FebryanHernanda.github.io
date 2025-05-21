@@ -1,5 +1,31 @@
 const ShowcaseData = [
   {
+    media: "img/showcase/showcase5.png",
+    mediaAlt: "Dimas Herly Andinna Portfolio",
+    titleContent: "Dimas Herly's Portfolio",
+    category: "Web Development",
+    descContent:
+      "An insightful overview of Dimas Herly’s expertise, personal values, and career journey!",
+    linkDemo: "https://dimas-portfolio-page.vercel.app",
+    tools: [
+      {
+        src: "img/Icon/nextjs.png",
+        description: "CSS Icon",
+        label: "NextJS",
+      },
+      {
+        src: "img/Icon/ts.png",
+        description: "Html Icon",
+        label: "Typescript",
+      },
+      {
+        src: "img/Icon/materialui.png",
+        description: "Material UI Icon",
+        label: "Material UI",
+      },
+    ],
+  },
+  {
     media: "img/showcase/showcase1.png",
     mediaAlt: "Karangsuci",
     titleContent: "Karangsuci Company Profile",
@@ -20,7 +46,7 @@ const ShowcaseData = [
       },
       {
         src: "img/Icon/tailwind.png",
-        description: "ReactJs Icon",
+        description: "Tailwind Icon",
         label: "Tailwind",
       },
     ],

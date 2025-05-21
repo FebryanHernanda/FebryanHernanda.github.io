@@ -5,5 +5,5 @@ export type Props = {
     | "ghost"
     | "link"
     | "destructive"
-    | "outline";
+    | "outline-solid";
 };
