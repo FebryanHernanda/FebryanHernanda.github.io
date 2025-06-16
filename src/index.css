@@ -91,6 +91,6 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #22c55e; /* hijau */
+  background-color: #22c55e;
   animation: fancyPulse 2s infinite;
 }

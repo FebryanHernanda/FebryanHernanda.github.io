@@ -4,7 +4,7 @@ const styleConfig = {
   title:
     "text-center text-[50px] flex flex-col gap-2 w-full h-full xl:w-[700px] xl:text-left",
   content: "w-full flex flex-wrap justify-rounded justify-between gap-10",
-  button: "mt-3",
+  button: "mt-3 w-32",
   dialogTrigger: "flex",
 };
 

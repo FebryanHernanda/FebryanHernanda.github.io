@@ -4,3 +4,4 @@ export * from "./CardShowcase";
 export * from "./DialogProfile";
 export * from "./DialogContact";
 export * from "./DialogServices";
+export * from "./TechIcon";

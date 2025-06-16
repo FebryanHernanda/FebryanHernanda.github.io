@@ -7,6 +7,7 @@ import {
   HeroSection,
   ServicesSection,
   ShowcaseSection,
+  TechStackSection,
 } from "./assets/templates";
 import App from "./app";
 
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")!).render(
     <App />
     <div className="max-w-[1600px] mx-auto">
       <HeroSection />
+      <TechStackSection />
       <ShowcaseSection />
       <ServicesSection />
       <ContactSection />
