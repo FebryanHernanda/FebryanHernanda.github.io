@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { HomePage } from "../assets/pages";
+import { ArticlesPage, HomePage, WorkExperiencePage } from "../assets/pages";
+import { MainLayout } from "@/assets/templates";
 
 const App = () => {
   const fullText =
@@ -19,7 +20,11 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />}></Route>
+        <Route element={<MainLayout></MainLayout>}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/WorkExperience" element={<WorkExperiencePage />} />
+          <Route path="/Article" element={<ArticlesPage />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

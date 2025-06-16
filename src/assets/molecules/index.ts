@@ -5,3 +5,4 @@ export * from "./DialogProfile";
 export * from "./DialogContact";
 export * from "./DialogServices";
 export * from "./TechIcon";
+export * from "./ScrollToTop";

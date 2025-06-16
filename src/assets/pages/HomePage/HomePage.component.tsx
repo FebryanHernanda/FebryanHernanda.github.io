@@ -1,8 +1,6 @@
 import {
   ContactSection,
-  FooterSection,
   HeroSection,
-  NavbarSection,
   ServicesSection,
   ShowcaseSection,
   TechStackSection,
@@ -11,13 +9,11 @@ import {
 const HomePage = () => {
   return (
     <div className="max-w-[1600px] mx-auto">
-      <NavbarSection />
       <HeroSection />
       <TechStackSection />
       <ShowcaseSection />
       <ServicesSection />
       <ContactSection />
-      <FooterSection />
     </div>
   );
 };
