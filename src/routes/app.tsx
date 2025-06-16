@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HomePage } from "../assets/pages";
 
 const App = () => {
   const fullText =
@@ -14,7 +16,13 @@ const App = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return <></>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />}></Route>
+      </Routes>
+    </BrowserRouter>
+  );
 };
 
 export default App;

@@ -21,7 +21,7 @@ import { Link } from "react-scroll";
 
 const ProfileCard = () => {
   return (
-    <nav className="z-10">
+    <div className="z-10">
       <div className={styleConfig.wrapper}>
         <div className={styleConfig.avatar}>
           <Avatar>
@@ -79,7 +79,7 @@ const ProfileCard = () => {
           <ContactLogoSection type="avatarNav" />
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 

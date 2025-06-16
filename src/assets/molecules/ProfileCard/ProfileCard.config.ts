@@ -1,6 +1,6 @@
 const styleConfig = {
   wrapper: "flex items-center justify-between",
-  avatar: "order-first sm:order-none",
+  avatar: "order-first sm:order-none lg:mr-5",
   avatarSide: "mx-auto",
   profileInfo: "order-first text-[15px] pl-5 sm:ml-0 sm:text-base",
   humbergerMenu: "p-3 text-3xl sm:hidden",
