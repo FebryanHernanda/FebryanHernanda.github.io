@@ -1,8 +1,10 @@
 const WorkExperiencePage = () => {
   return (
-    <div className="min-h-screen">
-      <h1>Work Experience Page</h1>
-    </div>
+    <section className="min-h-screen">
+      <div className="min-h-screen bg-orange-200">
+        <h1>Work Experience Page</h1>
+      </div>
+    </section>
   );
 };
 

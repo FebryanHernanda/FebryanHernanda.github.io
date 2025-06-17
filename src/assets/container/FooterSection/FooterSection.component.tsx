@@ -4,8 +4,8 @@ import { styleConfig } from "./FooterSection.config";
 const FooterSection = () => {
   return (
     <footer className={styleConfig.container}>
-      <div className="mt-10">
-        <hr />
+      <hr />
+      <div className="p-5">
         <FooterContainer />
       </div>
     </footer>

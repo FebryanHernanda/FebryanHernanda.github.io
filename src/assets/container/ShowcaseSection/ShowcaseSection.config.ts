@@ -122,7 +122,7 @@ const ShowcaseData = [
 ];
 
 const styleConfig = {
-  container: "flex flex-wrap gap-10 p-5 xl:flex-nowrap md:p-10",
+  container: "flex flex-wrap gap-10 px-5 xl:flex-nowrap md:px-10",
   textWrapper:
     "text-center text-[50px] px-5 mt-[-20px] flex gap-2 flex-col w-full h-full xl:w-[700px] xl:text-left xl:sticky xl:top-0",
   mediaWrapper: "flex flex-wrap w-full justify-between gap-10",

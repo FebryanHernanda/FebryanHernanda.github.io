@@ -1,5 +1,5 @@
 const styleConfig = {
-  container: "flex flex-col gap-5 px-5 mt-[-5px] mb-10 lg:px-10",
+  container: "flex flex-col gap-5 px-5  py-5 mt-[-30px] lg:px-10",
 };
 
 export { styleConfig };

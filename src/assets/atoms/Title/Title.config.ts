@@ -6,7 +6,7 @@ const styleConfig = {
   headline: "text-[60px] font-bold",
   subTitle: "text-[15px] font-light",
   cardTitle: "text-3xl font-bold",
-  cardSubTitle: "text-md font-lgiht",
+  cardSubTitle: "text-md font-light",
 };
 
 export { styleConfig };

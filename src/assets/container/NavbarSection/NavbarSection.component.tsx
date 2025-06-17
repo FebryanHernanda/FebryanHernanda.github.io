@@ -1,35 +1,30 @@
 import { NavLink } from "react-router-dom";
+import { styleConfig } from "./NavbarSection.config";
 
 const NavbarSection = () => {
   return (
-    <nav className="px-5 lg:px-10">
-      <div className="flex flex-row justify-center w-full gap-10 mt-5 text-sm md:gap-20 ">
+    <nav className={styleConfig.wrapper}>
+      <div className={styleConfig.navContainer}>
         <NavLink
           to="/"
           className={({ isActive }) =>
-            isActive
-              ? "p-2 font-normal rounded-md  bg-gray-100"
-              : "p-2 rounded-md hover:text-black hover:bg-gray-100"
+            isActive ? styleConfig.isActive : styleConfig.notActive
           }
         >
           Home
         </NavLink>
         <NavLink
-          to="/WorkExperience"
+          to="/work-experience"
           className={({ isActive }) =>
-            isActive
-              ? "p-2 font-normal rounded-md  bg-gray-100"
-              : "p-2 rounded-md hover:text-black hover:bg-gray-100"
+            isActive ? styleConfig.isActive : styleConfig.notActive
           }
         >
           Work Experience
         </NavLink>
         <NavLink
-          to="/Article"
+          to="/article"
           className={({ isActive }) =>
-            isActive
-              ? "p-2 font-normal rounded-md  bg-gray-100"
-              : "p-2 rounded-md hover:text-black hover:bg-gray-100"
+            isActive ? styleConfig.isActive : styleConfig.notActive
           }
         >
           Article

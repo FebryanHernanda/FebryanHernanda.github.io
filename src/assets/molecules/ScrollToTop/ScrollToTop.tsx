@@ -1,5 +1,6 @@
 import { ArrowUp } from "lucide-react";
 import { useEffect, useState } from "react";
+import { styleConfig } from "./ScrollToTop.config";
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,8 +28,8 @@ const ScrollToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-24 md:bottom-6 right-6 z-50 p-3 rounded-full shadow-lg bg-black text-white transition-opacity duration-300 ${
-        isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
+      className={` ${styleConfig.buttonStyle} ${
+        isVisible ? styleConfig.isVisible : styleConfig.notVisible
       }`}
       aria-label="Scroll to Top"
     >

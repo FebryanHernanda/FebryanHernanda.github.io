@@ -8,7 +8,7 @@ import {
 
 const HomePage = () => {
   return (
-    <div className="max-w-[1600px] mx-auto">
+    <div className="max-w-[1600px]  flex flex-col mx-auto  gap-10">
       <HeroSection />
       <TechStackSection />
       <ShowcaseSection />
