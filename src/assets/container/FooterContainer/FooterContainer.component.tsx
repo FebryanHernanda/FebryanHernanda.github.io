@@ -1,7 +1,7 @@
 import { Title } from "@/assets/atoms";
-import { ContactLogoSection } from "@/assets/molecules";
-import { styleConfig } from "./FooterContainer.config";
+import { ContactLogoSection } from "@/assets/organisms";
 import { ResumeDownload } from "@/assets/features";
+import { styleConfig } from "./FooterContainer.config";
 
 const FooterContainer = () => {
   return (

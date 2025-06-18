@@ -4,7 +4,7 @@ import {
   ServicesSection,
   ShowcaseSection,
   TechStackSection,
-} from "@/assets/container";
+} from "@/assets/organisms";
 
 const HomePage = () => {
   return (

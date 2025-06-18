@@ -1,4 +1,4 @@
-import { TechStackContainer } from "@/assets/organisms";
+import { TechStackContainer } from "@/assets/container";
 import { styleConfig } from "./TechStackSection.config";
 
 const TechStackSection = () => {

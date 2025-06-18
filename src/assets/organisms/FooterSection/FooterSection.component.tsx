@@ -1,4 +1,4 @@
-import { FooterContainer } from "@/assets/organisms";
+import { FooterContainer } from "@/assets/container";
 import { styleConfig } from "./FooterSection.config";
 
 const FooterSection = () => {

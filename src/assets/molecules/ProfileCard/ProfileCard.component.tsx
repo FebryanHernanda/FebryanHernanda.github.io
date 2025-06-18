@@ -1,5 +1,4 @@
 import { Title } from "@/assets/atoms";
-import { ContactLogoSection } from "@/assets/molecules";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { styleConfig } from "./ProfileCard.config";
@@ -18,6 +17,7 @@ import { IoFolderOpenSharp } from "react-icons/io5";
 import { MdContactMail } from "react-icons/md";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { Link } from "react-scroll";
+import { ContactLogoSection } from "@/assets/organisms";
 
 const ProfileCard = () => {
   return (

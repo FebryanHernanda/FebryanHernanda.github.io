@@ -1,4 +1,4 @@
-import { ServicesContainer } from "@/assets/organisms";
+import { ServicesContainer } from "@/assets/container";
 import { styleConfig } from "./ServicesSection.config";
 
 const ServicesSection = () => {

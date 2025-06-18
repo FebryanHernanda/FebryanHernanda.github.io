@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { styleConfig, techStackLeft, techStackRight } from "./TechIcon.config";
+import { styleConfig } from "./TechIcon.config";
+import { techStackIcon } from "@/data";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -59,7 +60,7 @@ const TechIcon = () => {
   return (
     <div ref={containerRef} className={styleConfig.wrapper}>
       <div ref={leftRowRef} className={styleConfig.leftContainer}>
-        {techStackLeft.map((item, index) => (
+        {techStackIcon.slice(0, 11).map((item, index) => (
           <div key={index} className={styleConfig.iconWrapper}>
             <img
               src={item.imgSrc}
@@ -71,7 +72,7 @@ const TechIcon = () => {
       </div>
 
       <div ref={rightRowRef} className={styleConfig.rightContainer}>
-        {techStackRight.map((item, index) => (
+        {techStackIcon.slice(12, 23).map((item, index) => (
           <div key={index} className={styleConfig.iconWrapper}>
             <img
               src={item.imgSrc}

@@ -1,4 +1,4 @@
-import { FooterSection, NavbarSection } from "@/assets/container";
+import { FooterSection, NavbarSection } from "@/assets/organisms";
 import { ScrollToTop } from "@/assets/molecules";
 import { Outlet } from "react-router-dom";
 const MainLayout = () => {

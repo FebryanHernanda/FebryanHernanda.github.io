@@ -1,4 +1,4 @@
-import { HeroContainer } from "@/assets/organisms";
+import { HeroContainer } from "@/assets/container";
 import { styleConfig } from "./HeroSection.config";
 
 const HeroSection = () => {

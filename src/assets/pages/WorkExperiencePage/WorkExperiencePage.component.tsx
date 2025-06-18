@@ -1,9 +1,9 @@
+import { WorkExperienceContainer } from "@/assets/container";
+
 const WorkExperiencePage = () => {
   return (
-    <section className="min-h-screen">
-      <div className="min-h-screen bg-orange-200">
-        <h1>Work Experience Page</h1>
-      </div>
+    <section className="px-5 mb-10 lg:px-10 lg:py-5">
+      <WorkExperienceContainer />
     </section>
   );
 };
