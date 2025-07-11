@@ -7,3 +7,4 @@ export * from "./TechIcon";
 export * from "./ScrollToTop";
 export * from "./WorkExperienceLeft";
 export * from "./WorkExperienceRight";
+export * from "./CardArticle";

@@ -22,7 +22,7 @@ const ServicesContainer = () => {
               <Title Label={data.subtitle} Type="cardSubTitle" />
             </div>
             <Dialog>
-              <div className="flex justify-center md:justify-normal">
+              <div className="flex ">
                 <DialogTrigger className={styleConfig.dialogTrigger} asChild>
                   <Button variant="secondary" className={styleConfig.button}>
                     Learn More

@@ -4,7 +4,7 @@ const styleConfig = {
   title:
     "text-center text-[50px] flex flex-col gap-2 w-full h-full xl:w-[700px] xl:text-left",
   content: "w-full flex flex-wrap justify-rounded justify-between gap-10",
-  button: "mt-3 w-32",
+  button: "mt-1 w-32",
   dialogTrigger: "flex",
 };
 
@@ -23,7 +23,7 @@ const servicesData = [
   {
     title: "UI/UX Design",
     subtitle:
-      "Creating user-centered designs that enhance usability and improve user experience",
+      "Creating user-centered designs that enhance usability and user experience",
     benefits: [
       "Intuitive user interfaces that simplify navigation and increase user satisfaction.",
       "User-centered design that improves usability and meets the needs of diverse audiences.",
@@ -45,7 +45,7 @@ const servicesData = [
   {
     title: "Tech Consulting",
     subtitle:
-      "Providing expert advice on technology solutions to improve efficiency and drive innovation.",
+      "Improving efficiency and innovation via expert technology guidance.",
     benefits: [
       "Customized technology solutions aligned with business goals and needs.",
       "Improved efficiency and streamlined processes through tailored technology recommendations.",

@@ -10,6 +10,7 @@ const HeroContainer = () => {
         loop
         muted
         autoPlay
+        playsInline
         className={styleConfig.video}
       />
       <ProfileCard />
