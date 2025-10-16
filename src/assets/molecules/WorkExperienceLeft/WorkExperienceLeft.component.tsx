@@ -22,7 +22,7 @@ const WorkExperienceLeft = () => {
             className="text-2xl"
           />
           <Title
-            Label="Front-end Developer"
+            Label="Fullstack Developer"
             Type="Regular"
             className="text-2xl"
           />
