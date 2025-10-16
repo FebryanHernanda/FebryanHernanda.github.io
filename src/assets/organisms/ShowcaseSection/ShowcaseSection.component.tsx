@@ -41,7 +41,7 @@ const ShowcaseSection = () => {
         <div className={styleConfig.textWrapper}>
           <Title Label="Showcase" Type="Bold" />
           <Title
-            Label="A showcase of my latest frontend projects, combining creativity with responsive, interactive designs to deliver engaging user experiences."
+            Label="A showcase of my latest web projects, combining creativity with responsive, interactive designs to deliver engaging user experiences."
             Type="subTitle"
           />
         </div>
