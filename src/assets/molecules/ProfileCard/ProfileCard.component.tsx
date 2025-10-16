@@ -31,7 +31,7 @@ const ProfileCard = () => {
         </div>
         <div className={styleConfig.profileInfo}>
           <Title Label="Febryan Hernanda Mashudi" Type="Bold" />
-          <Title Label="Front-end Developer" Type="Regular" />
+          <Title Label="Fullstack Developer" Type="Regular" />
         </div>
         <div className={styleConfig.humbergerMenu}>
           <Sheet>
@@ -49,7 +49,7 @@ const ProfileCard = () => {
                   </Avatar>
                 </div>
                 <SheetTitle>Febryan Hernanda Mashudi</SheetTitle>
-                <SheetDescription>Front-end Developer</SheetDescription>
+                <SheetDescription>Fullstack Developer</SheetDescription>
               </SheetHeader>
               <hr />
               <SheetFooter>
