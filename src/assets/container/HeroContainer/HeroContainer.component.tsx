@@ -21,7 +21,7 @@ Functional Websites"
           Type="headline"
         />
         <Title
-          Label="As a Front-End Developer with a focus on UI/UX design, I build visually appealing and user-friendly websites and applications that empower businesses to elevate user satisfaction, increase engagement, and drive digital innovation."
+          Label="As a Full-Stack Developer, I design and build scalable, user-focused web applications that seamlessly combine aesthetic design and robust functionality to enhance user experience, boost engagement, and drive digital growth."
           Type="subHeadline"
         />
       </div>
