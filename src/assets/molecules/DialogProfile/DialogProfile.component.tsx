@@ -24,7 +24,7 @@ const DialogProfile = () => {
       </Avatar>
       <div className={styleConfig.textSize}>
         <h1 className={styleConfig.titleBold}>Febryan Hernanda Mashudi</h1>
-        <h4>Front-end Developer</h4>
+        <h4>Fullstack Developer</h4>
       </div>
       <DialogDescription className={styleConfig.DialogDescription}>
         My background in design strengthens my ability to craft exceptional user
