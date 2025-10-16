@@ -27,19 +27,22 @@ const dataBadge = [
     name: "ReactJs",
   },
   {
+    name: "NextJs",
+  },
+  {
     name: "Javascript",
   },
   {
     name: "Typescript",
   },
   {
-    name: "Python",
+    name: "Go-lang",
   },
   {
-    name: "HTML",
+    name: "Redis",
   },
   {
-    name: "CSS",
+    name: "Redux",
   },
   {
     name: "Adobe Xd",
