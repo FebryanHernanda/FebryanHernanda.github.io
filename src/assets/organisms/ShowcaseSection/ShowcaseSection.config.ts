@@ -1,5 +1,57 @@
 const ShowcaseData = [
   {
+    media: "img/showcase/showcase7.png",
+    mediaAlt: "Russel Pay",
+    titleContent: "Russel Pay",
+    category: "Web Development",
+    descContent:
+      "A clean and intuitive web solution designed to simplify digital transactions for everyday users.",
+    linkDemo: "https://github.com/FebryanHernanda/Belalai-E-Wallet-Frontend",
+    tools: [
+      {
+        src: "img/Icon/react.png",
+        description: "ReactJS Icon",
+        label: "ReactJS",
+      },
+      {
+        src: "img/Icon/go.png",
+        description: "Go Icon",
+        label: "Go-Lang",
+      },
+      {
+        src: "img/Icon/postgres.png",
+        description: "PostgreSQL Icon",
+        label: "PostgreSQL",
+      },
+    ],
+  },
+  {
+    media: "img/showcase/showcase6.png",
+    mediaAlt: "Tickitz",
+    titleContent: "Tickitz",
+    category: "Web Development",
+    descContent:
+      "A smooth cinema ticketing experience focused on speed, clarity, and modern usability.",
+    linkDemo: "https://github.com/FebryanHernanda/tickitz-web-app-react",
+    tools: [
+      {
+        src: "img/Icon/react.png",
+        description: "ReactJS Icon",
+        label: "ReactJS",
+      },
+      {
+        src: "img/Icon/go.png",
+        description: "Go Icon",
+        label: "Go-Lang",
+      },
+      {
+        src: "img/Icon/postgres.png",
+        description: "PostgreSQL Icon",
+        label: "PostgreSQL",
+      },
+    ],
+  },
+  {
     media: "img/showcase/showcase5.png",
     mediaAlt: "Dimas Herly Andinna Portfolio",
     titleContent: "Dimas Herly's Portfolio",

@@ -2,94 +2,142 @@ const techStackIcon = [
   {
     imgSrc: "img/Icon/Tech-Stack/javascript.png",
     altImg: "Javascript Icon",
+    tooltip: "Javascript",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/typescript.png",
     altImg: "Typescript Icon",
+    tooltip: "Typescript",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/nodejs.png",
     altImg: "NodeJs Icon",
+    tooltip: "NodeJs",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/reactjs.png",
     altImg: "ReactJs Icon",
+    tooltip: "ReactJS",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/nextjs.png",
     altImg: "NextJs Icon",
+    tooltip: "NextJS",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/redux.png",
     altImg: "Redux Icon",
+    tooltip: "Redux",
+  },
+  {
+    imgSrc: "img/Icon/Tech-Stack/express.png",
+    altImg: "Express Icon",
+    tooltip: "ExpressJS",
+  },
+  {
+    imgSrc: "img/Icon/Tech-Stack/go.png",
+    altImg: "Go-lang Icon",
+    tooltip: "Go Languange",
+  },
+  {
+    imgSrc: "img/Icon/Tech-Stack/swagger.png",
+    altImg: "Swagger Icon",
+    tooltip: "Swagger Documentation",
+  },
+  {
+    imgSrc: "img/Icon/Tech-Stack/postgres.png",
+    altImg: "Postgres Icon",
+    tooltip: "PostgreSQL",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/mongodb.png",
     altImg: "MongoDB Icon",
+    tooltip: "MongoDB",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/supabase.png",
     altImg: "Supabase Icon",
+    tooltip: "Supabase",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/mysql.png",
     altImg: "MySQL Icon",
+    tooltip: "MySQL",
+  },
+  {
+    imgSrc: "img/Icon/Tech-Stack/docker.png",
+    altImg: "Docker Icon",
+    tooltip: "Docker",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/git.png",
     altImg: "Git Icon",
+    tooltip: "Git",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/github.png",
     altImg: "Github Icon",
+    tooltip: "Github",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/vite.png",
     altImg: "Vite Icon",
+    tooltip: "Vite",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/html5.png",
     altImg: "HTML5 Icon",
+    tooltip: "HTML",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/css.png",
     altImg: "CSS Icon",
+    tooltip: "CSS",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/tailwind.png",
     altImg: "TailwindCSS Icon",
+    tooltip: "Tailwind CSS",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/bootstrap.png",
     altImg: "Bootstrap Icon",
+    tooltip: "Bootstrap",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/materialui.png",
     altImg: "MaterialUI Icon",
+    tooltip: "Material UI",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/shadcnui.png",
     altImg: "ShadcnUI Icon",
+    tooltip: "Shadcn UI",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/figma.png",
     altImg: "Figma Icon",
+    tooltip: "Figma",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/adobexd.png",
     altImg: "Adobe Xd Icon",
+    tooltip: "Adobe Xd",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/photoshop.png",
     altImg: "Adobe Photoshop Icon",
+    tooltip: "Adobe Photoshop",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/jira.png",
     altImg: "Jira Icon",
+    tooltip: "Jira",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/wordpress.png",
     altImg: "Wordpress Icon",
+    tooltip: "Wordpress",
   },
 ];
 

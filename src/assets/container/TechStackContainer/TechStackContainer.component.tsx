@@ -1,6 +1,7 @@
 import { Title } from "@/assets/atoms";
 import { TechIcon } from "@/assets/molecules";
 import { styleConfig } from "./TechStackContainer.config";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const TechStackContainer = () => {
   return (
@@ -8,7 +9,9 @@ const TechStackContainer = () => {
       <div className={styleConfig.textWrapper}>
         <Title Label="Tech Stack" Type="Bold" />
       </div>
-      <TechIcon />
+      <TooltipProvider>
+        <TechIcon />
+      </TooltipProvider>
     </>
   );
 };
