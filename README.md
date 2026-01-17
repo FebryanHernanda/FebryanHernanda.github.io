@@ -63,10 +63,6 @@ This portfolio is engineered with a focus on **Performance**, **SEO**, and **Use
     npm run build
     ```
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ---
 
 _Engineered with precision by [Febryan Hernanda](https://linkedin.com/in/febryan-hernanda-mashudi/)_
