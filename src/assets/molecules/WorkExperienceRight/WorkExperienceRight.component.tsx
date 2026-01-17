@@ -12,25 +12,26 @@ const WorkExperienceRight = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      const items = gsap.utils.toArray(".timeline-item");
-      gsap.fromTo(
-        items,
-        { opacity: 0, x: -30, filter: "blur(10px)" },
-        {
-          opacity: 1,
-          x: 0,
-          filter: "blur(0px)",
-          duration: 0.8,
-          stagger: 0.2,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: containerRef.current,
-            start: "top 80%",
-            end: "bottom 20%",
-            toggleActions: "play none none reverse",
-          },
-        }
-      );
+      const items = gsap.utils.toArray(".timeline-item") as HTMLElement[];
+
+      items.forEach((item) => {
+        gsap.fromTo(
+          item,
+          { opacity: 0, x: -50 },
+          {
+            opacity: 1,
+            x: 0,
+            duration: 0.8,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: item,
+              start: "top 90%",
+              end: "bottom 20%",
+              toggleActions: "play none none reverse",
+            },
+          }
+        );
+      });
     }, containerRef);
 
     return () => ctx.revert();
