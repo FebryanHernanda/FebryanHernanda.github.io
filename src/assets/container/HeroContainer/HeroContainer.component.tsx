@@ -42,12 +42,12 @@ const HeroContainer = () => {
       </div>
       <div className={`${styleConfig.headline} hero-item`}>
         <Title
-          Label="Crafting Beautiful, 
-Functional Websites"
+          Label="Building Scalable,
+Robust Applications"
           Type="headline"
         />
         <Title
-          Label="As a Full-Stack Developer, I design and build scalable, user-focused web applications that seamlessly combine aesthetic design and robust functionality to enhance user experience, boost engagement, and drive digital growth."
+          Label="As a Full-Stack Developer & Software Engineer, I architect and build high-performance, scalable web applications. I focus on clean code, system reliability, and delivering robust solutions that drive business growth."
           Type="subHeadline"
         />
       </div>
