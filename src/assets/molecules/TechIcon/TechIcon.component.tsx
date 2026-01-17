@@ -6,6 +6,7 @@ import { techStackIcon } from "@/data";
 import {
   Tooltip,
   TooltipContent,
+  TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
@@ -63,43 +64,45 @@ const TechIcon = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className={styleConfig.wrapper}>
-      <div ref={leftRowRef} className={styleConfig.leftContainer}>
-        {techStackIcon.slice(0, 14).map((item, index) => (
-          <Tooltip key={index}>
-            <TooltipTrigger asChild>
-              <div className={styleConfig.iconWrapper}>
-                <img
-                  src={item.imgSrc}
-                  alt={item.altImg}
-                  className={styleConfig.iconStyle}
-                />
-              </div>
-            </TooltipTrigger>
+    <TooltipProvider>
+      <div ref={containerRef} className={styleConfig.wrapper}>
+        <div ref={leftRowRef} className={styleConfig.leftContainer}>
+          {techStackIcon.slice(0, 14).map((item, index) => (
+            <Tooltip key={index}>
+              <TooltipTrigger asChild>
+                <div className={styleConfig.iconWrapper}>
+                  <img
+                    src={item.imgSrc}
+                    alt={item.altImg}
+                    className={styleConfig.iconStyle}
+                  />
+                </div>
+              </TooltipTrigger>
 
-            <TooltipContent>{item.tooltip}</TooltipContent>
-          </Tooltip>
-        ))}
+              <TooltipContent>{item.tooltip}</TooltipContent>
+            </Tooltip>
+          ))}
+        </div>
+
+        <div ref={rightRowRef} className={styleConfig.rightContainer}>
+          {techStackIcon.slice(15, 28).map((item, index) => (
+            <Tooltip key={index}>
+              <TooltipTrigger asChild>
+                <div className={styleConfig.iconWrapper}>
+                  <img
+                    src={item.imgSrc}
+                    alt={item.altImg}
+                    className={styleConfig.iconStyle}
+                  />
+                </div>
+              </TooltipTrigger>
+
+              <TooltipContent>{item.tooltip}</TooltipContent>
+            </Tooltip>
+          ))}
+        </div>
       </div>
-
-      <div ref={rightRowRef} className={styleConfig.rightContainer}>
-        {techStackIcon.slice(15, 28).map((item, index) => (
-          <Tooltip key={index}>
-            <TooltipTrigger asChild>
-              <div className={styleConfig.iconWrapper}>
-                <img
-                  src={item.imgSrc}
-                  alt={item.altImg}
-                  className={styleConfig.iconStyle}
-                />
-              </div>
-            </TooltipTrigger>
-
-            <TooltipContent>{item.tooltip}</TooltipContent>
-          </Tooltip>
-        ))}
-      </div>
-    </div>
+    </TooltipProvider>
   );
 };
 

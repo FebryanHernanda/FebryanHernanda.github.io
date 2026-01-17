@@ -2,6 +2,12 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { techStackIcon } from "@/data";
 import { Title } from "@/assets/atoms";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const TechIconMarquee = () => {
   const marqueeRef = useRef<HTMLDivElement>(null);
@@ -31,19 +37,27 @@ const TechIconMarquee = () => {
   const duplicatedIcons = [...techStackIcon, ...techStackIcon];
 
   return (
-    <div className="space-y-5 overflow-hidden" ref={marqueeRef}>
-      <Title Label="Tech Stack" Type="Bold" className="text-2xl" />
-      <div className="flex gap-5 " ref={marqueeItemRef}>
-        {duplicatedIcons.map((data, index) => (
-          <img
-            key={index}
-            src={data.imgSrc}
-            alt={data.altImg}
-            className="w-15"
-          />
-        ))}
+    <TooltipProvider>
+      <div className="space-y-5 overflow-hidden" ref={marqueeRef}>
+        <Title Label="Tech Stack" Type="Bold" className="text-2xl" />
+        <div className="flex gap-5 py-4" ref={marqueeItemRef}>
+          {duplicatedIcons.map((data, index) => (
+            <Tooltip key={index}>
+              <TooltipTrigger asChild>
+                <img
+                  src={data.imgSrc}
+                  alt={data.altImg}
+                  className="w-15 cursor-pointer hover:scale-110 transition-transform duration-200"
+                />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>{data.tooltip}</p>
+              </TooltipContent>
+            </Tooltip>
+          ))}
+        </div>
       </div>
-    </div>
+    </TooltipProvider>
   );
 };
 

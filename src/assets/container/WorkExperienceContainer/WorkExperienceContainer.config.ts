@@ -1,5 +1,6 @@
 const styleConfig = {
-  container: "flex flex-wrap gap-5 xl:flex-nowrap ",
+  container: "flex flex-col xl:flex-row gap-8 w-full relative",
+
 };
 
 export { styleConfig };

@@ -11,18 +11,18 @@ const techStackIcon = [
   },
   {
     imgSrc: "img/Icon/Tech-Stack/nodejs.png",
-    altImg: "NodeJs Icon",
-    tooltip: "NodeJs",
+    altImg: "Node.js Icon",
+    tooltip: "Node.js",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/reactjs.png",
-    altImg: "ReactJs Icon",
-    tooltip: "ReactJS",
+    altImg: "React.js Icon",
+    tooltip: "React.js",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/nextjs.png",
-    altImg: "NextJs Icon",
-    tooltip: "NextJS",
+    altImg: "Next.js Icon",
+    tooltip: "Next.js",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/redux.png",
@@ -31,18 +31,18 @@ const techStackIcon = [
   },
   {
     imgSrc: "img/Icon/Tech-Stack/express.png",
-    altImg: "Express Icon",
-    tooltip: "ExpressJS",
+    altImg: "Express.js Icon",
+    tooltip: "Express.js",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/go.png",
-    altImg: "Go-lang Icon",
-    tooltip: "Go Languange",
+    altImg: "Go Icon",
+    tooltip: "Go Language",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/swagger.png",
     altImg: "Swagger Icon",
-    tooltip: "Swagger Documentation",
+    tooltip: "Swagger",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/postgres.png",
@@ -87,16 +87,16 @@ const techStackIcon = [
   {
     imgSrc: "img/Icon/Tech-Stack/html5.png",
     altImg: "HTML5 Icon",
-    tooltip: "HTML",
+    tooltip: "HTML5",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/css.png",
     altImg: "CSS Icon",
-    tooltip: "CSS",
+    tooltip: "CSS3",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/tailwind.png",
-    altImg: "TailwindCSS Icon",
+    altImg: "Tailwind CSS Icon",
     tooltip: "Tailwind CSS",
   },
   {
@@ -106,12 +106,12 @@ const techStackIcon = [
   },
   {
     imgSrc: "img/Icon/Tech-Stack/materialui.png",
-    altImg: "MaterialUI Icon",
+    altImg: "Material UI Icon",
     tooltip: "Material UI",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/shadcnui.png",
-    altImg: "ShadcnUI Icon",
+    altImg: "Shadcn UI Icon",
     tooltip: "Shadcn UI",
   },
   {
@@ -121,8 +121,8 @@ const techStackIcon = [
   },
   {
     imgSrc: "img/Icon/Tech-Stack/adobexd.png",
-    altImg: "Adobe Xd Icon",
-    tooltip: "Adobe Xd",
+    altImg: "Adobe XD Icon",
+    tooltip: "Adobe XD",
   },
   {
     imgSrc: "img/Icon/Tech-Stack/photoshop.png",
@@ -137,33 +137,54 @@ const techStackIcon = [
   {
     imgSrc: "img/Icon/Tech-Stack/wordpress.png",
     altImg: "Wordpress Icon",
-    tooltip: "Wordpress",
+    tooltip: "WordPress",
   },
 ];
 
 const workExperience = [
   {
-    company: "Pondok Pesantren Al Hidayah Karangsuci",
-    role: "Fullstack Developer (Freelance)",
-    year: "2024 - present",
+    company: "PT. Bandung Semesta Teknologi",
+    role: "Fullstack Developer",
+    year: "Oct 2025 - Present",
     responsibilities: [
-      "Built a modern company profile website and an internal CMS using Next.js (TypeScript) and React.js, ensuring responsive design, scalability, and optimal performance across devices.",
-      "Developed the CMS with React.js and Redux for state management, enabling efficient content updates and user role control for administrators.",
-      "Utilized Supabase as the backend-as-a-service (BaaS) platform for authentication, database, and file storage, ensuring real-time data handling and streamlined development.",
-      "Adopted the Atomic Design Pattern to create a modular and reusable component architecture, improving code maintainability and UI consistency.",
-      "Implemented agile development with the Scrum framework, collaborating in weekly sprints, backlog grooming, sprint planning, and daily stand-ups using Jira.",
-      "Leveraged Git and GitHub for version control, employing branching strategies, pull requests, and code reviews to maintain code quality and collaboration efficiency.",
+      "Currently spearheading the development of advanced 3D MotionBoard dashboards for PT. Astra Honda Motor, visualizing critical production metrics and business performance.",
+      "Engineering and optimizing complex InfluxDB queries to deliver precise, real-time analytics that empower data-driven operational decision-making.",
+      "Collaborating closely with cross-functional stakeholders to define KPIs, streamline data pipelines, and automate comprehensive reporting systems.",
+      "Driving enterprise digitalization initiatives by transforming raw operational data into actionable strategic insights.",
     ],
   },
   {
-    company: "Dimas Herly Personal Portfolio",
+    company: "Koda Tech Academy",
+    role: "Fullstack Developer",
+    year: "Jul 2025 - Sep 2025",
+    responsibilities: [
+      "Led the end-to-end development of 'Russel Pay', a secure digital wallet platform, acting as Project Lead and ensuring code quality through rigorous Pull Request management.",
+      "Architected a high-performance backend using Go (Gin), PostgreSQL, and JWT, integrating secure transaction flows and SMTP email notifications.",
+      "Designed and built a scalable frontend architecture using React.js, Tailwind CSS, and Atomic Design principles, ensuring component reusability and UI consistency.",
+      "Orchestrated containerized development environments using Docker and Docker Compose to streamline CI/CD workflows and testing.",
+      "Developed 'Tickitz', a feature-rich movie booking application, implementing Role-Based Access Control (RBAC) and comprehensive API documentation via Swagger.",
+    ],
+  },
+  {
+    company: "Dimas Herly Portfolio",
     role: "Front-end Developer (Freelance)",
     year: "Mar 2025 - May 2025",
     responsibilities: [
-      "Developed a Personal Portfolio Website for a client, utilizing Next.js, Typescript, Tailwind CSS, and Material UI to create a modern, responsive design.",
-      "Implemented interactive elements and smooth transitions to enhance user experience, ensuring compatibility across various devices.",
-      "Focused on performance optimization, type safety, clean, reusable components to maintain code quality and scalability.",
-      "Integrated SEO best practices to improve site visibility and ranking on search engines. Enhancing the portfolio’s online presence.",
+      "Delivered a bespoke Personal Portfolio Website, leveraging Next.js, TypeScript, and Tailwind CSS to craft a modern, high-performance user interface.",
+      "Engineered smooth, interactive transitions and micro-animations to significantly enhance user engagement and visual storytelling.",
+      "Prioritized type safety and component modularity, resulting in a clean, maintainable codebase optimized for future scalability.",
+      "Implemented advanced SEO strategies to maximize online visibility and search engine ranking.",
+    ],
+  },
+  {
+    company: "Pondok Pesantren Al Hidayah",
+    role: "Fullstack Developer (Freelance)",
+    year: "Oct 2024 - Dec 2025",
+    responsibilities: [
+      "Built a modern company profile and robust internal CMS using Next.js (TypeScript) and React.js, delivering a responsive and performant digital presence.",
+      "Developed a custom Content Management System with React.js and Redux, empowering administrators with intuitive content control.",
+      "Leveraged Supabase for comprehensive backend services including authentication, real-time database, and secure file storage.",
+      "Adopted Agile Scrum methodologies, managing weekly sprints and backlogs via Jira to ensure timely delivery and adaptability.",
     ],
   },
 ];

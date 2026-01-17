@@ -1,11 +1,11 @@
 const styleConfig = {
   container:
-    "flex flex-wrap rounded-xl bg-[#efefef] w-full md:flex-nowrap xl:flex-wrap xl:w-[550px]",
-  imageContainer: "flex-grow",
+    "flex flex-col md:flex-row xl:flex-col xl:sticky xl:top-20 z-10 w-full xl:w-[400px] h-fit rounded-3xl overflow-hidden bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl border border-zinc-200 dark:border-zinc-800 transition-all duration-300",
+  imageContainer: "w-full md:w-1/2 xl:w-full h-[300px] md:h-auto xl:h-[400px] relative overflow-hidden group",
   imageStyle:
-    "object-cover rounded-t-xl md:rounded-tr-none md:rounded-l-xl xl:rounded-bl-none xl:rounded-t-xl w-full h-[300px]  md:w-[300px] md:h-[210px] xl:h-full xl:w-full",
+    "w-full h-full object-cover transition-transform duration-700 group-hover:scale-110",
   textContainer:
-    "p-5 w-full text-center md:h-[210px] lg:h-auto flex flex-col gap-1",
-  footerTextContainer: "flex flex-col items-center justify-center h-full",
+    "flex flex-col items-center justify-center p-8 w-full md:w-1/2 xl:w-full bg-gradient-to-b from-transparent to-zinc-50/50 dark:to-black/20 gap-4",
+  footerTextContainer: "w-full flex flex-col items-center gap-4 mt-4",
 };
 export { styleConfig };
