@@ -19,7 +19,7 @@ const DialogProfile = () => {
         <hr />
       </span>
       <Avatar className={styleConfig.avatarSize}>
-        <AvatarImage src="img/ava.png" />
+        <AvatarImage src="img/ava.png" className="object-cover" />
         <AvatarFallback>Profile Picture</AvatarFallback>
       </Avatar>
       <div className={styleConfig.textSize}>

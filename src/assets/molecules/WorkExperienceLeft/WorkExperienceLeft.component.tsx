@@ -7,11 +7,11 @@ const WorkExperienceLeft = () => {
     <div className={styleConfig.container}>
       <div className={styleConfig.imageContainer}>
         <img
-          src="img/profileme.jpg"
+          src="img/ava.png"
           alt="Profile Picture"
           className={styleConfig.imageStyle}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent dark:from-black/40 pointer-events-none" />
+        <div className="absolute inset-0  pointer-events-none" />
       </div>
 
       <div className={styleConfig.textContainer}>
@@ -29,7 +29,7 @@ const WorkExperienceLeft = () => {
             <ContactLogoSection type="avatarFooter" />
           </div>
           <div className="w-full flex justify-center">
-             <ResumeDownload variant="default" />
+            <ResumeDownload variant="default" />
           </div>
         </div>
       </div>

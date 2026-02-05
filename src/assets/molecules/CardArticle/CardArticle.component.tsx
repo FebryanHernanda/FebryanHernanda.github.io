@@ -12,7 +12,11 @@ const MainCardArticle = () => {
       />
       <div className="flex flex-wrap items-center gap-5 lg:flex-row">
         <Avatar className="w-7 h-7">
-          <AvatarImage src="img/ava.png" alt="profile picture" />
+          <AvatarImage
+            src="img/ava.png"
+            alt="profile picture"
+            className="object-cover"
+          />
           <AvatarFallback>Profile Picture</AvatarFallback>
         </Avatar>
         <Title Label="Febryan Hernanda" Type="Bold" className="text-md" />
