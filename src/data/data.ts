@@ -143,9 +143,21 @@ const techStackIcon = [
 
 const workExperience = [
   {
+    company: "PT Jasa Marga (Persero) Tbk",
+    role: "Frontend Engineer",
+    year: "Feb 2026 - Present",
+    responsibilities: [
+      "Developed and maintained enterprise web applications, including a Customer Service Management System and a GIS-based toll road monitoring platform.",
+      "Designed frontend architecture (component structure, state management, and data flow) to improve maintainability and scalability.",
+      "Built data-intensive interfaces with focus on performance, rendering efficiency, and usability for operational workflows.",
+      "Implemented geospatial data visualization and interactive mapping for real-time asset monitoring.",
+      "Translated business and operational requirements into structured, maintainable frontend solutions.",
+    ],
+  },
+  {
     company: "PT. Bandung Semesta Teknologi",
     role: "Fullstack Developer",
-    year: "Oct 2025 - Present",
+    year: "Oct 2025 - Feb 2026",
     responsibilities: [
       "Currently spearheading the development of advanced 3D MotionBoard dashboards for PT. Astra Honda Motor, visualizing critical production metrics and business performance.",
       "Engineering and optimizing complex InfluxDB queries to deliver precise, real-time analytics that empower data-driven operational decision-making.",

@@ -58,7 +58,7 @@ const ShowcaseData = [
     category: "Web Development",
     descContent:
       "An insightful overview of Dimas Herly’s expertise, personal values, and career journey!",
-    linkDemo: "https://dimas-portfolio-page.vercel.app",
+    linkDemo: "https://dimasherlyandinna.vercel.app",
     tools: [
       {
         src: "img/Icon/nextjs.png",
