@@ -14,4 +14,5 @@ export type ValidationErrors = {
 
 export type SubmitProps = {
   OnSave: (data: formDataType) => void;
+  initialMessage?: string;
 };

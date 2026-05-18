@@ -1,57 +1,65 @@
 const styleConfig = {
   container:
-    "rounded-3xl bg-[#efefef] flex flex-wrap gap-10 p-5 xl:py-[50px] xl:flex-nowrap",
+    "rounded-3xl bg-[#efefef] dark:bg-zinc-900/30 flex flex-col xl:flex-row gap-12 p-6 md:p-10 xl:py-[70px] transition-all duration-300",
   title:
-    "text-center text-[50px] flex flex-col gap-2 w-full h-full xl:w-[700px] xl:text-left",
-  content: "w-full flex flex-wrap justify-rounded justify-between gap-10",
-  button: "mt-1 w-32",
-  dialogTrigger: "flex",
+    "text-center xl:text-left text-[50px] flex flex-col gap-4 w-full xl:w-[420px] xl:sticky xl:top-24 h-fit shrink-0",
+  content: "flex flex-col gap-5 w-full",
+  card: "flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 p-6 md:p-8 bg-white dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800/80 rounded-3xl shadow-xs hover:shadow-sm hover:translate-y-[-2px] transition-all duration-300 w-full",
+  cardTextWrapper: "space-y-2 max-w-xl",
+  cardTitle: "text-xl font-bold text-zinc-900 dark:text-zinc-50",
+  cardSubtitle:
+    "font-mono text-[10px] font-normal text-zinc-500 dark:text-zinc-400 border-zinc-200 dark:border-zinc-800 uppercase tracking-wider rounded-md bg-zinc-50 dark:bg-zinc-800/40 p-2 w-fit inline-flex items-center shadow-xs",
+  cardDescription:
+    "text-sm text-zinc-500 dark:text-zinc-400 font-light leading-relaxed",
+  cardActionWrapper:
+    "flex flex-col sm:items-end gap-3 shrink-0 w-full sm:w-auto",
+  priceWrapper: "text-left sm:text-right",
+  priceLabel:
+    "text-[10px] font-mono text-zinc-400 dark:text-zinc-500 uppercase tracking-wider",
+  priceValue: "text-lg font-bold text-zinc-900 dark:text-zinc-50",
+  button: "w-full sm:w-32",
 };
 
 const servicesData = [
   {
-    title: "Web Development",
-    subtitle:
-      "Building responsive and interactive web applications using modern technologies.",
-    benefits: [
-      "Responsive applications that provide a seamless experience across all devices.",
-      "Enhanced interactivity, improving user engagement and satisfaction.",
-      "Efficient, well-structured code that allows for scalability and ease of maintenance.",
-      "Faster load times and optimized performance, improving SEO and user retention.",
-    ],
+    title: "Landing Page",
+    subtitle: "Product & Brand Showcase",
+    description:
+      "Modern landing pages designed for products, businesses, and personal brands with clean UI and conversion-focused experiences.",
+    price: "Starting from 750k+",
+    cta: "Discuss Project",
+    initialMessage:
+      "Hi Febryan, I'd like to discuss a Landing Page project for my product/business: ",
   },
   {
-    title: "UI/UX Design",
-    subtitle:
-      "Creating user-centered designs that enhance usability and user experience",
-    benefits: [
-      "Intuitive user interfaces that simplify navigation and increase user satisfaction.",
-      "User-centered design that improves usability and meets the needs of diverse audiences.",
-      "Stronger brand identity through cohesive and visually appealing design elements.",
-      "Higher conversion rates from well-researched, optimized user flows.",
-    ],
+    title: "Company Profile",
+    subtitle: "Business Website",
+    description:
+      "Professional multi-page websites built to strengthen business presence, improve credibility, and communicate services clearly.",
+    price: "Starting from 2.5jt+",
+    cta: "Discuss Project",
+    initialMessage:
+      "Hi Febryan, I'm interested in building a Company Profile Website for my business: ",
   },
   {
-    title: "Graphic Design",
-    subtitle:
-      "Designing visual content for branding, marketing, and communication.",
-    benefits: [
-      "Visually appealing designs that capture attention and reinforce brand identity.",
-      "Clear and effective communication through visuals, making messages memorable.",
-      "Consistent branding across digital and print media for stronger brand recognition.",
-      "Higher engagement with target audiences through well-crafted visual content.",
-    ],
+    title: "Custom Platform",
+    subtitle: "Web App & SaaS",
+    description:
+      "Custom web applications tailored for business workflows, management systems, booking platforms, ecommerce, and operational tools.",
+    price: "Custom Pricing",
+    cta: "Discuss Project",
+    initialMessage:
+      "Hi Febryan, I'd like to discuss a Custom Platform or Web App project: ",
   },
   {
-    title: "Tech Consulting",
-    subtitle:
-      "Improving efficiency and innovation via expert technology guidance.",
-    benefits: [
-      "Customized technology solutions aligned with business goals and needs.",
-      "Improved efficiency and streamlined processes through tailored technology recommendations.",
-      "Guidance on best practices for adopting and integrating new technologies.",
-      "Reduced risk and faster implementation with strategic technology roadmaps.",
-    ],
+    title: "Internal System",
+    subtitle: "Dashboard & Operations",
+    description:
+      "Scalable dashboard systems and internal tools designed to simplify operations, monitoring, and business management workflows.",
+    price: "Custom Pricing",
+    cta: "Discuss Project",
+    initialMessage:
+      "Hi Febryan, we'd like to discuss a Dashboard or Internal System project: ",
   },
 ];
 

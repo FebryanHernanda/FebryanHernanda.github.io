@@ -5,9 +5,11 @@ import { DataContact, SubmitProps, ValidationErrors } from "./FormContact.type";
 import { styleConfig } from "./FormContact.config";
 
 const FormContact = (props: SubmitProps) => {
-  const { OnSave } = props;
+  const { OnSave, initialMessage } = props;
 
-  const [inputs, setInputs] = useState({} as DataContact);
+  const [inputs, setInputs] = useState<DataContact>({
+    ProjectDetails: initialMessage || "",
+  } as DataContact);
   const [errors, setErrors] = useState({} as ValidationErrors);
 
   const validationErrors = {} as DataContact;

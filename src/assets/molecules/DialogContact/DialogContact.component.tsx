@@ -20,7 +20,7 @@ import {
 } from "./DialogContact.config";
 
 const DialogContact = (props: TriggerProps) => {
-  const { isOpen, setIsOpen } = props;
+  const { isOpen, setIsOpen, initialMessage } = props;
   const [isLoading, setIsLoading] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
   const [errorMessages, setErrorMessages] = useState("");
@@ -76,7 +76,11 @@ const DialogContact = (props: TriggerProps) => {
         ) : errorMessages ? (
           <div className={styleConfig.errorMessages}>{errorMessages}</div>
         ) : (
-          <FormContact OnSave={handleSubmit} />
+          <FormContact
+            key={isOpen ? initialMessage : "closed"}
+            OnSave={handleSubmit}
+            initialMessage={initialMessage}
+          />
         )}
       </DialogContent>
     </Dialog>

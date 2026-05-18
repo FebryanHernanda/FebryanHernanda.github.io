@@ -1,6 +1,7 @@
 export type TriggerProps = {
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
+  initialMessage?: string;
 };
 
 export type formDataType = {
