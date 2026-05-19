@@ -127,20 +127,22 @@ const ShowcaseSection = () => {
             />
             </div>
           ))}
-          <div className="flex justify-center w-full mt-8">
-            <Button onClick={handleShowMore} disabled={isLoading}>
-              {isLoading ? (
-                <>
-                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                  Loading...
-                </>
-              ) : expanded ? (
-                "Show Less"
-              ) : (
-                "Show More"
-              )}
-            </Button>
-          </div>
+          {ShowcaseData.length > 4 && (
+            <div className="flex justify-center w-full mt-8">
+              <Button onClick={handleShowMore} disabled={isLoading}>
+                {isLoading ? (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    Loading...
+                  </>
+                ) : expanded ? (
+                  "Show Less"
+                ) : (
+                  "Show More"
+                )}
+              </Button>
+            </div>
+          )}
         </div>
       </div>
     </section>

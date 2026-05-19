@@ -3,20 +3,20 @@ const ShowcaseData = [
     media: "img/showcase/showcase7.png",
     mediaAlt: "Russel Pay",
     titleContent: "Russel Pay",
-    category: "Web Development",
+    category: "Fintech Platform",
     descContent:
-      "A clean and intuitive web solution designed to simplify digital transactions for everyday users.",
+      "Digital wallet platform focused on secure transactions, intuitive flows, and scalable frontend architecture.",
     linkDemo: "https://github.com/FebryanHernanda/Belalai-E-Wallet-Frontend",
     tools: [
       {
         src: "img/Icon/react.png",
         description: "ReactJS Icon",
-        label: "ReactJS",
+        label: "React",
       },
       {
         src: "img/Icon/go.png",
         description: "Go Icon",
-        label: "Go-Lang",
+        label: "Go",
       },
       {
         src: "img/Icon/postgres.png",
@@ -29,20 +29,20 @@ const ShowcaseData = [
     media: "img/showcase/showcase6.png",
     mediaAlt: "Tickitz",
     titleContent: "Tickitz",
-    category: "Web Development",
+    category: "Booking Platform",
     descContent:
-      "A smooth cinema ticketing experience focused on speed, clarity, and modern usability.",
+      "Modern movie ticket booking platform built with responsive UI, role-based access, and scalable system architecture.",
     linkDemo: "https://github.com/FebryanHernanda/tickitz-web-app-react",
     tools: [
       {
         src: "img/Icon/react.png",
         description: "ReactJS Icon",
-        label: "ReactJS",
+        label: "React",
       },
       {
         src: "img/Icon/go.png",
         description: "Go Icon",
-        label: "Go-Lang",
+        label: "Go",
       },
       {
         src: "img/Icon/postgres.png",
@@ -52,49 +52,23 @@ const ShowcaseData = [
     ],
   },
   {
-    media: "img/showcase/showcase5.png",
-    mediaAlt: "Dimas Herly Andinna Portfolio",
-    titleContent: "Dimas Herly's Portfolio",
-    category: "Web Development",
-    descContent:
-      "An insightful overview of Dimas Herly’s expertise, personal values, and career journey!",
-    linkDemo: "https://dimasherlyandinna.vercel.app",
-    tools: [
-      {
-        src: "img/Icon/nextjs.png",
-        description: "CSS Icon",
-        label: "NextJS",
-      },
-      {
-        src: "img/Icon/ts.png",
-        description: "Html Icon",
-        label: "Typescript",
-      },
-      {
-        src: "img/Icon/materialui.png",
-        description: "Material UI Icon",
-        label: "Material UI",
-      },
-    ],
-  },
-  {
     media: "img/showcase/showcase1.png",
-    mediaAlt: "Karangsuci",
-    titleContent: "Karangsuci Company Profile",
-    category: "Web Development",
+    mediaAlt: "Karangsuci CMS",
+    titleContent: "Karangsuci CMS",
+    category: "Company Profile & CMS",
     descContent:
-      "A concise overview of Karangsuci, showcasing our company profile and core values!",
+      "Company profile website and internal CMS built to simplify content management and strengthen digital presence.",
     linkDemo: "https://karangsuci.com",
     tools: [
       {
         src: "img/Icon/nextjs.png",
-        description: "CSS Icon",
-        label: "NextJS",
+        description: "NextJS Icon",
+        label: "Next.js",
       },
       {
         src: "img/Icon/ts.png",
-        description: "Html Icon",
-        label: "Typescript",
+        description: "TypeScript Icon",
+        label: "TypeScript",
       },
       {
         src: "img/Icon/tailwind.png",
@@ -104,70 +78,28 @@ const ShowcaseData = [
     ],
   },
   {
-    media: "img/showcase/showcase2.png",
-    mediaAlt: "Bookshelf Apps",
-    titleContent: "Bookshelf Apps",
-    category: "Web Development",
+    media: "img/showcase/showcase5.png",
+    mediaAlt: "Personal Portfolio Website",
+    titleContent: "Personal Portfolio Website",
+    category: "Frontend Engineering",
     descContent:
-      "A user-friendly app for organizing, tracking, and managing your personal book collection effortlessly.",
-    linkDemo: "https://febryanhernanda-showcase.github.io/Bookshelf-Apps/",
+      "Modern portfolio website focused on clean UI, smooth interactions, responsive experience, and scalable frontend architecture.",
+    linkDemo: "https://dimasherlyandinna.vercel.app",
     tools: [
       {
-        src: "img/Icon/html.png",
-        description: "CSS Icon",
-        label: "HTML",
+        src: "img/Icon/nextjs.png",
+        description: "NextJS Icon",
+        label: "Next.js",
       },
       {
-        src: "img/Icon/css.png",
-        description: "Html Icon",
-        label: "CSS",
+        src: "img/Icon/ts.png",
+        description: "TypeScript Icon",
+        label: "TypeScript",
       },
       {
-        src: "img/Icon/js.png",
-        description: "ReactJs Icon",
-        label: "Javascript",
-      },
-    ],
-  },
-  {
-    media: "img/showcase/showcase3.png",
-    mediaAlt: "Karangsuci",
-    titleContent: "Palindrome Checker",
-    category: "Web Development",
-    descContent:
-      "Easily determine if a word, phrase, or number is a palindrome with our simple and intuitive online tool.",
-    linkDemo: "https://febryanhernanda-showcase.github.io/Palindrom-Checker/",
-    tools: [
-      {
-        src: "img/Icon/html.png",
-        description: "CSS Icon",
-        label: "HTML",
-      },
-      {
-        src: "img/Icon/css.png",
-        description: "Html Icon",
-        label: "CSS",
-      },
-      {
-        src: "img/Icon/js.png",
-        description: "ReactJs Icon",
-        label: "Javascript",
-      },
-    ],
-  },
-  {
-    media: "img/showcase/showcase4.png",
-    mediaAlt: "Karangsuci",
-    titleContent: "Garuda Muda Poster",
-    category: "Graphic Design",
-    descContent:
-      "A concise overview of Karangsuci, showcasing our company profile and core values!",
-    linkDemo: "https://www.instagram.com/p/CTEfHc0pUFY/",
-    tools: [
-      {
-        src: "img/Icon/photoshop.png",
-        description: "Adobe Photoshop",
-        label: "Adobe Photoshop",
+        src: "img/Icon/materialui.png",
+        description: "Material UI Icon",
+        label: "Material UI",
       },
     ],
   },
