@@ -1,57 +1,5 @@
 const ShowcaseData = [
   {
-    media: "img/showcase/showcase7.png",
-    mediaAlt: "Russel Pay",
-    titleContent: "Russel Pay",
-    category: "Fintech Platform",
-    descContent:
-      "Digital wallet platform focused on secure transactions, intuitive flows, and scalable frontend architecture.",
-    linkDemo: "https://github.com/FebryanHernanda/Belalai-E-Wallet-Frontend",
-    tools: [
-      {
-        src: "img/Icon/react.png",
-        description: "ReactJS Icon",
-        label: "React",
-      },
-      {
-        src: "img/Icon/go.png",
-        description: "Go Icon",
-        label: "Go",
-      },
-      {
-        src: "img/Icon/postgres.png",
-        description: "PostgreSQL Icon",
-        label: "PostgreSQL",
-      },
-    ],
-  },
-  {
-    media: "img/showcase/showcase6.png",
-    mediaAlt: "Tickitz",
-    titleContent: "Tickitz",
-    category: "Booking Platform",
-    descContent:
-      "Modern movie ticket booking platform built with responsive UI, role-based access, and scalable system architecture.",
-    linkDemo: "https://github.com/FebryanHernanda/tickitz-web-app-react",
-    tools: [
-      {
-        src: "img/Icon/react.png",
-        description: "ReactJS Icon",
-        label: "React",
-      },
-      {
-        src: "img/Icon/go.png",
-        description: "Go Icon",
-        label: "Go",
-      },
-      {
-        src: "img/Icon/postgres.png",
-        description: "PostgreSQL Icon",
-        label: "PostgreSQL",
-      },
-    ],
-  },
-  {
     media: "img/showcase/showcase1.png",
     mediaAlt: "Karangsuci CMS",
     titleContent: "Karangsuci CMS",
@@ -100,6 +48,58 @@ const ShowcaseData = [
         src: "img/Icon/materialui.png",
         description: "Material UI Icon",
         label: "Material UI",
+      },
+    ],
+  },
+  {
+    media: "img/showcase/showcase7.png",
+    mediaAlt: "Russel Pay",
+    titleContent: "Russel Pay",
+    category: "Fintech Platform",
+    descContent:
+      "Digital wallet platform focused on secure transactions, intuitive flows, and scalable frontend architecture.",
+    linkDemo: "https://github.com/FebryanHernanda/Belalai-E-Wallet-Frontend",
+    tools: [
+      {
+        src: "img/Icon/react.png",
+        description: "ReactJS Icon",
+        label: "React",
+      },
+      {
+        src: "img/Icon/go.png",
+        description: "Go Icon",
+        label: "Go",
+      },
+      {
+        src: "img/Icon/postgres.png",
+        description: "PostgreSQL Icon",
+        label: "PostgreSQL",
+      },
+    ],
+  },
+  {
+    media: "img/showcase/showcase6.png",
+    mediaAlt: "Tickitz",
+    titleContent: "Tickitz",
+    category: "Booking Platform",
+    descContent:
+      "Modern movie ticket booking platform built with responsive UI, role-based access, and scalable system architecture.",
+    linkDemo: "https://github.com/FebryanHernanda/tickitz-web-app-react",
+    tools: [
+      {
+        src: "img/Icon/react.png",
+        description: "ReactJS Icon",
+        label: "React",
+      },
+      {
+        src: "img/Icon/go.png",
+        description: "Go Icon",
+        label: "Go",
+      },
+      {
+        src: "img/Icon/postgres.png",
+        description: "PostgreSQL Icon",
+        label: "PostgreSQL",
       },
     ],
   },
