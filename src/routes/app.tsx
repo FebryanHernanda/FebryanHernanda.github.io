@@ -1,7 +1,9 @@
 import { Helmet } from "react-helmet-async";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { MainLayout } from "@/assets/templates";
 import { lazy, Suspense } from "react";
+import { LanguageProvider } from "../context/LanguageContext";
+import { SITE_CONFIG } from "@/config/site";
 
 // Lazy load pages
 const HomePage = lazy(() =>
@@ -15,14 +17,20 @@ const WorkExperiencePage = lazy(() =>
 const ArticlesPage = lazy(() =>
   import("../assets/pages").then((module) => ({ default: module.ArticlesPage }))
 );
+const ArticleDetailPage = lazy(() =>
+  import("../assets/pages").then((module) => ({
+    default: module.ArticleDetailPage,
+  }))
+);
 
-const SITE_URL = "https://febryanhernanda.github.io";
-const OG_IMAGE = `${SITE_URL}/img/og-preview.png`;
+const SITE_URL = SITE_CONFIG.siteUrl;
+const OG_IMAGE = `${SITE_URL}/img/og/default.png`;
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Suspense fallback={<div className="min-h-screen" />}>
+    <LanguageProvider>
+      <BrowserRouter>
+        <Suspense fallback={<div className="min-h-screen" />}>
         <Routes>
           <Route element={<MainLayout />}>
             <Route
@@ -127,58 +135,18 @@ const App = () => {
             />
             <Route
               path="/article"
-              element={
-                <>
-                  <Helmet>
-                    <title>
-                      Articles — Software Engineering & Web Architecture |
-                      Febryan Hernanda
-                    </title>
-                    <meta
-                      name="description"
-                      content="Technical articles on software engineering, system design, scalable web architecture, and modern development practices by Febryan Hernanda."
-                    />
-                    <link rel="canonical" href={`${SITE_URL}/article`} />
-
-                    {/* Open Graph */}
-                    <meta property="og:type" content="website" />
-                    <meta
-                      property="og:url"
-                      content={`${SITE_URL}/article`}
-                    />
-                    <meta
-                      property="og:title"
-                      content="Articles — Febryan Hernanda"
-                    />
-                    <meta
-                      property="og:description"
-                      content="Technical articles on software engineering, system design, scalable architecture, and modern development practices."
-                    />
-                    <meta property="og:image" content={OG_IMAGE} />
-
-                    {/* Twitter */}
-                    <meta
-                      name="twitter:card"
-                      content="summary_large_image"
-                    />
-                    <meta
-                      name="twitter:title"
-                      content="Articles — Febryan Hernanda"
-                    />
-                    <meta
-                      name="twitter:description"
-                      content="Technical articles on software engineering, system design, scalable architecture, and modern development practices."
-                    />
-                    <meta name="twitter:image" content={OG_IMAGE} />
-                  </Helmet>
-                  <ArticlesPage />
-                </>
-              }
+              element={<Navigate to="/articles" replace />}
+            />
+            <Route path="/articles" element={<ArticlesPage />} />
+            <Route
+              path="/articles/:slug"
+              element={<ArticleDetailPage />}
             />
           </Route>
         </Routes>
-      </Suspense>
-    </BrowserRouter>
+        </Suspense>
+      </BrowserRouter>
+    </LanguageProvider>
   );
 };
 

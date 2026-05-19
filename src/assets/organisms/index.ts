@@ -6,3 +6,4 @@ export * from "./ServicesSection";
 export * from "./ContactSection";
 export * from "./FooterSection";
 export * from "./ContactLogoSection";
+export * from "./ArticlesSection";

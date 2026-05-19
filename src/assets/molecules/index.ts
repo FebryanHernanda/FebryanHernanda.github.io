@@ -8,3 +8,4 @@ export * from "./ScrollToTop";
 export * from "./WorkExperienceLeft";
 export * from "./WorkExperienceRight";
 export * from "./CardArticle";
+export * from "./ArticleCard";
