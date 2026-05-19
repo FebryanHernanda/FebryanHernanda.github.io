@@ -59,7 +59,7 @@ export const articles: Article[] = [
   > "Sebuah internal tool premium seharusnya terasa secepat, sebersih, dan seresponsif produk SaaS komersial kelas atas."
   Dengan memperlakukan internal tools lewat kedisiplinan rekayasa perangkat lunak dan kehalusan estetika visual yang setara dengan produk komersial, kita dapat membangun sistem internal yang melipatgandakan efisiensi bisnis serta memperkuat kepercayaan tim secara mendalam.`,
     coverImage: "/img/articles/dashboard-fail.png",
-    ogImage: "/img/articles/dashboard-fail.png",
+    ogImage: "/img/og/why-most-internal-dashboards-fail.png",
     publishedAt: "2026-05-15",
     readingTime: "4 min read",
     tags: ["UI/UX", "Product Design", "Engineering"],
@@ -105,7 +105,7 @@ export const articles: Article[] = [
   > "Seorang developer seharusnya dapat merombak total seluruh logika pengolahan data pada kontainer tanpa perlu mengubah sebaris kode pun pada komponen tampilan visual dasarnya."
   Berinvestasi dalam arsitektur yang kokoh sejak hari pertama bukanlah tindakan berlebihan (overengineering). Ini adalah satu-satunya investasi terbaik untuk memastikan codebase Anda tetap bersih, nyaman, dan menyenangkan untuk dikembangkan seiring bertambahnya skala aplikasi.`,
     coverImage: "/img/articles/frontend-architecture.png",
-    ogImage: "/img/articles/frontend-architecture.png",
+    ogImage: "/img/og/frontend-architecture-that-scales.png",
     publishedAt: "2026-05-18",
     readingTime: "5 min read",
     tags: ["Frontend", "Engineering", "Architecture"],
@@ -159,7 +159,7 @@ export const articles: Article[] = [
   > \"Kesederhanaan dalam merancang adalah bentuk kedaulatan mutlak atas pemahaman estetika teknis.\"
   Berinvestasi dalam kualitas visual frontend premium bukanlah masalah selera seni subjektif semata. Ini adalah keputusan rekayasa perangkat lunak strategis yang terbukti membangun rasa aman pengguna, melipatgandakan konversi penjualan, serta mengukuhkan posisi merek Anda di tingkat teratas pasar.`,
     coverImage: "/img/articles/clean-ui-trust.png",
-    ogImage: "/img/articles/clean-ui-trust.png",
+    ogImage: "/img/og/why-clean-ui-builds-business-trust.png",
     publishedAt: "2026-05-19",
     readingTime: "3 min read",
     tags: ["UI/UX", "Business", "Marketing"],
@@ -201,7 +201,7 @@ export const articles: Article[] = [
   > "Website Anda adalah tenaga pemasar yang aktif 24 jam nonstop. Ia sigap melayani pertanyaan pelanggan, menampilkan portofolio studi kasus terbaik Anda, dan menjaring prospek baru bahkan saat Anda sedang terlelap tidur."
   Bagi bisnis lokal modern mana pun yang berambisi untuk mematok harga layanan premium dan ingin memimpin jauh di depan para pesaing, memiliki website mandiri bukanlah sebuah pengeluaran tersier yang mewah—melainkan investasi aset bisnis terpenting yang paling menguntungkan bagi Anda.`,
     coverImage: "/img/articles/local-business-website.png",
-    ogImage: "/img/articles/local-business-website.png",
+    ogImage: "/img/og/why-website-critical-for-local-business.png",
     publishedAt: "2026-05-19",
     readingTime: "4 min read",
     tags: ["Business", "Marketing", "SEO"],
@@ -241,7 +241,7 @@ export const articles: Article[] = [
   > "CV PDF adalah sebuah berkas lamaran pasif. Website pribadi premium adalah sebuah undangan kehormatan."
   Dengan berinvestasi pada kepemilikan rumah digital mandiri yang profesional, Anda memantapkan posisi Anda sebagai praktisi senior yang serius dengan keahliannya. Hal ini memberikan Anda daya tawar yang sangat kuat dalam negosiasi kompensasi serta tarif konsultasi proyek.`,
     coverImage: "/img/articles/personal-website.png",
-    ogImage: "/img/articles/personal-website.png",
+    ogImage: "/img/og/how-personal-website-accelerates-career.png",
     publishedAt: "2026-05-19",
     readingTime: "3 min read",
     tags: ["Careers", "UI/UX", "Engineering"],
@@ -283,7 +283,7 @@ export const articles: Article[] = [
   > "SEO bukanlah pos pengeluaran biaya. Ia adalah investasi infrastruktur digital berharga tinggi yang membagikan dividen keuntungan bagi bisnis Anda selamanya."
   Dengan mengoptimalkan efisiensi performa situs, ketepatan tata letak semantik HTML, serta arsitektur konten sejak dini, Anda sedang mempersiapkan pondasi bisnis untuk menikmati pertumbuhan organik yang aman dan bebas dari ketergantungan biaya iklan selama beberapa dekade mendatang.`,
     coverImage: "/img/articles/seo-longevity.png",
-    ogImage: "/img/articles/seo-longevity.png",
+    ogImage: "/img/og/seo-critical-role-business-longevity.png",
     publishedAt: "2026-05-19",
     readingTime: "4 min read",
     tags: ["SEO", "Marketing", "Business"],
@@ -331,7 +331,7 @@ export const articles: Article[] = [
   > "Kerapian eksekusi visual adalah representasi terkuat dari mutu kualitas engineering di baliknya."
   Saat Anda berani keluar dari jerat layout generik pasaran dan merancang portofolio kustom premium yang dipoles matang, Anda sedang membuktikan kapasitas nyata Anda dalam mewujudkan perangkat lunak produksi kelas dunia.`,
     coverImage: "/img/articles/creative-portfolio.png",
-    ogImage: "/img/articles/creative-portfolio.png",
+    ogImage: "/img/og/developer-portfolios-breaking-standard-templates.png",
     publishedAt: "2026-05-19",
     readingTime: "3 min read",
     tags: ["Engineering", "UI/UX", "Careers"],
@@ -381,7 +381,7 @@ export const articles: Article[] = [
   > "Instagram menjadikan Anda sekadar pedagang. Website profesional mengukuhkan Anda sebagai sebuah institusi terpercaya."
   Amankan masa depan kedaulatan bisnis digital Anda, miliki hubungan erat dengan pelanggan Anda secara mandiri, dan raih kendali penuh atas pertumbuhan bisnis dengan membangun website profesional khusus Anda hari ini.`,
     coverImage: "/img/articles/digital-sovereignty.png",
-    ogImage: "/img/articles/digital-sovereignty.png",
+    ogImage: "/img/og/why-businesses-need-websites-not-just-social-media.png",
     publishedAt: "2026-05-19",
     readingTime: "4 min read",
     tags: ["Business", "Marketing", "Careers"],
@@ -434,7 +434,7 @@ export const articles: Article[] = [
   > "Digitalisasi bukan bertujuan untuk memangkas hubungan antar-manusia; melainkan membangun sistem andal yang melipatgandakan kapasitas jangkauan Anda, sehingga tim Anda dapat leluasa memprioritaskan pertumbuhan strategis bernilai tinggi."
   Jangan biarkan kompetitor perlahan menyingkirkan eksistensi bisnis Anda dari pasar. Bangun website kustom resmi Anda hari ini juga, dan miliki aset digital bernilai tinggi yang terus berkembang seiring waktu demi menjamin masa depan bisnis Anda.`,
     coverImage: "/img/articles/business-digitalization.png",
-    ogImage: "/img/articles/business-digitalization.png",
+    ogImage: "/img/og/digitalization-why-businesses-must-digitize.png",
     publishedAt: "2026-05-19",
     readingTime: "4 min read",
     tags: ["Business", "Marketing", "SEO"],
@@ -495,7 +495,7 @@ export const articles: Article[] = [
   > "Kehebatan sebuah backend tidak diukur dari seberapa mulus ia berjalan saat kondisi normal, melainkan dari seberapa tangguh ia meredam kegagalan sistem berantai, gangguan jaringan, serta lonjakan trafik yang tiba-tiba."
   Mengadopsi isolasi domain, otomatisasi antrean pesan asinkron, serta pembungkusan cache yang strategis menjamin sistem backend Anda tetap stabil, responsif, dan mudah dipelihara seiring berkembangnya skala bisnis Anda.`,
     coverImage: "/img/articles/backend-architecture.png",
-    ogImage: "/img/articles/backend-architecture.png",
+    ogImage: "/img/og/designing-resilient-backend-architecture.png",
     publishedAt: "2026-05-19",
     readingTime: "5 min read",
     tags: ["Architecture", "Backend", "Engineering"],

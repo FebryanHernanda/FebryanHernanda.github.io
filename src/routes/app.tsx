@@ -3,6 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { MainLayout } from "@/assets/templates";
 import { lazy, Suspense } from "react";
 import { LanguageProvider } from "../context/LanguageContext";
+import { SITE_CONFIG } from "@/config/site";
 
 // Lazy load pages
 const HomePage = lazy(() =>
@@ -22,8 +23,8 @@ const ArticleDetailPage = lazy(() =>
   }))
 );
 
-const SITE_URL = "https://febryanhernanda.github.io";
-const OG_IMAGE = `${SITE_URL}/img/og-preview.png`;
+const SITE_URL = SITE_CONFIG.siteUrl;
+const OG_IMAGE = `${SITE_URL}/img/og/default.png`;
 
 const App = () => {
   return (

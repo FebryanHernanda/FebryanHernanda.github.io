@@ -1,8 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { SEOProps } from "./SEO.types";
-
-const SITE_URL = "https://febryanhernanda.github.io";
-const DEFAULT_IMAGE = `${SITE_URL}/img/og-preview.png`;
+import { SITE_CONFIG, getAbsoluteUrl } from "@/config/site";
 
 export const SEO = ({
   title,
@@ -14,12 +12,8 @@ export const SEO = ({
   updatedAt,
   tags,
 }: SEOProps) => {
-  const canonicalUrl = `${SITE_URL}${path}`;
-  const ogImageUrl = image
-    ? image.startsWith("http")
-      ? image
-      : `${SITE_URL}${image}`
-    : DEFAULT_IMAGE;
+  const canonicalUrl = getAbsoluteUrl(path);
+  const ogImageUrl = getAbsoluteUrl(image || "/img/og/default.png");
 
   // JSON-LD Schema
   const schema = {
@@ -32,7 +26,7 @@ export const SEO = ({
           author: {
             "@type": "Person",
             "name": "Febryan Hernanda Mashudi",
-            "url": SITE_URL,
+            "url": SITE_CONFIG.siteUrl,
           },
           datePublished: publishedAt,
           dateModified: updatedAt || publishedAt,
@@ -40,13 +34,13 @@ export const SEO = ({
           mainEntityOfPage: canonicalUrl,
         }
       : {
-          name: "Febryan Hernanda",
-          url: SITE_URL,
+          name: SITE_CONFIG.siteName,
+          url: SITE_CONFIG.siteUrl,
           description: description,
           author: {
             "@type": "Person",
             "name": "Febryan Hernanda Mashudi",
-            "url": SITE_URL,
+            "url": SITE_CONFIG.siteUrl,
           },
         }),
   };
@@ -66,7 +60,7 @@ export const SEO = ({
       <meta property="og:image" content={ogImageUrl} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:site_name" content="Febryan Hernanda" />
+      <meta property="og:site_name" content={SITE_CONFIG.siteName} />
       <meta property="og:locale" content="en_US" />
 
       {/* Twitter Tags */}

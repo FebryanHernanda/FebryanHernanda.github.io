@@ -13,9 +13,69 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://febryanhernanda.github.io/article</loc>
+    <loc>https://febryanhernanda.github.io/articles</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://febryanhernanda.github.io/articles/why-most-internal-dashboards-fail</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://febryanhernanda.github.io/articles/frontend-architecture-that-scales</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://febryanhernanda.github.io/articles/why-clean-ui-builds-business-trust</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://febryanhernanda.github.io/articles/why-website-critical-for-local-business</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://febryanhernanda.github.io/articles/how-personal-website-accelerates-career</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://febryanhernanda.github.io/articles/seo-critical-role-business-longevity</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://febryanhernanda.github.io/articles/developer-portfolios-breaking-standard-templates</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://febryanhernanda.github.io/articles/why-businesses-need-websites-not-just-social-media</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://febryanhernanda.github.io/articles/digitalization-why-businesses-must-digitize</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://febryanhernanda.github.io/articles/designing-resilient-backend-architecture</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 </urlset>
