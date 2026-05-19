@@ -35,7 +35,10 @@ const HeroContainer = () => {
         muted
         autoPlay
         playsInline
+        poster="img/herobg.png"
+        preload="metadata"
         className={styleConfig.video}
+        aria-hidden="true"
       />
       <div className="hero-item">
         <ProfileCard />
