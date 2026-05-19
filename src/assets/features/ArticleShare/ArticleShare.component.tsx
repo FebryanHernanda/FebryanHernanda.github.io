@@ -3,13 +3,12 @@ import { useLanguage } from "@/context/LanguageContext";
 import { SITE_CONFIG } from "@/config/site";
 import { shareTranslations, styleConfig } from "./ArticleShare.config";
 import { ArticleShareProps } from "./ArticleShare.types";
-import { Share2, Link as LinkIcon, Check, MessageCircle, Linkedin, Twitter, Instagram, X as CloseIcon } from "lucide-react";
+import { Share2, Link as LinkIcon, Check, MessageCircle, Linkedin, Twitter, X as CloseIcon } from "lucide-react";
 
 export const ArticleShare: React.FC<ArticleShareProps> = ({ title, excerpt, slug }) => {
   const { language } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
-  const [isInstagramCopied, setIsInstagramCopied] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
 
   const t = shareTranslations[language];
@@ -60,29 +59,6 @@ export const ArticleShare: React.FC<ArticleShareProps> = ({ title, excerpt, slug
       }, 2000);
     } catch (err) {
       console.warn("Failed to copy link:", err);
-    }
-  };
-
-  const handleInstagramShare = async () => {
-    try {
-      // 1. Copy link so it's ready to paste in Story Link Sticker
-      await navigator.clipboard.writeText(articleUrl);
-      setIsInstagramCopied(true);
-      
-      // 2. Open Instagram directly (App scheme on mobile, website fallback on desktop)
-      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-      if (isMobile) {
-        window.location.href = "instagram://";
-      } else {
-        window.open("https://instagram.com", "_blank");
-      }
-
-      setTimeout(() => {
-        setIsInstagramCopied(false);
-      }, 3000);
-    } catch (err) {
-      console.warn("Failed to copy link for Instagram:", err);
-      window.open("https://instagram.com", "_blank");
     }
   };
 
@@ -214,24 +190,6 @@ export const ArticleShare: React.FC<ArticleShareProps> = ({ title, excerpt, slug
                 </svg>
                 <span>Threads</span>
               </a>
-
-              {/* Instagram */}
-              <button
-                onClick={handleInstagramShare}
-                className={styleConfig.gridBtn}
-              >
-                {isInstagramCopied ? (
-                  <>
-                    <Check className="w-3.5 h-3.5 text-emerald-500" />
-                    <span className="text-emerald-500 truncate">{t.instagramCopied}</span>
-                  </>
-                ) : (
-                  <>
-                    <Instagram className="w-3.5 h-3.5" />
-                    <span>{t.instagramStory}</span>
-                  </>
-                )}
-              </button>
             </div>
 
           </div>
