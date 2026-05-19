@@ -1,5 +1,31 @@
 const ShowcaseData = [
   {
+    media: "img/showcase/showcase8.png",
+    mediaAlt: "QRyuk!",
+    titleContent: "QRyuk!",
+    category: "Web Product",
+    descContent:
+      "Free QR code generator built for instant creation, privacy-first usage, and customizable visual branding without login.",
+    linkDemo: "https://qryuk.my.id/",
+    tools: [
+      {
+        src: "img/Icon/nextjs.png",
+        description: "NextJS Icon",
+        label: "Next.js",
+      },
+      {
+        src: "img/Icon/ts.png",
+        description: "TypeScript Icon",
+        label: "TypeScript",
+      },
+      {
+        src: "img/Icon/tailwind.png",
+        description: "Tailwind Icon",
+        label: "Tailwind",
+      },
+    ],
+  },
+  {
     media: "img/showcase/showcase1.png",
     mediaAlt: "Karangsuci CMS",
     titleContent: "Karangsuci CMS",
@@ -29,9 +55,9 @@ const ShowcaseData = [
     media: "img/showcase/showcase5.png",
     mediaAlt: "Personal Portfolio Website",
     titleContent: "Personal Portfolio Website",
-    category: "Frontend Engineering",
+    category: "Personal Branding Website",
     descContent:
-      "Modern portfolio website focused on clean UI, smooth interactions, responsive experience, and scalable frontend architecture.",
+      "Modern portfolio website focused on clean UI, smooth interactions, experience, and scalable architecture.",
     linkDemo: "https://dimasherlyandinna.vercel.app",
     tools: [
       {

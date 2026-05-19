@@ -23,7 +23,7 @@ const FormContact = (props: SubmitProps) => {
     setInputs((inputs) => ({ ...inputs, [name]: value }));
   };
 
-  /* HandleSubmit Funciton */
+  /* HandleSubmit Function */
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -35,26 +35,24 @@ const FormContact = (props: SubmitProps) => {
       message: inputs.ProjectDetails,
     };
 
-    /* Email Validation */
-
+    /* Email & Phone Validation */
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!inputs.Email) {
-      validationErrors.Email = "Email must be input";
+      validationErrors.Email = "Email is required";
     } else if (!emailRegex.test(inputs.Email)) {
-      validationErrors.Email = "Format email not valid !";
+      validationErrors.Email = "Please enter a valid email address";
     }
 
-    if (inputs.PhoneNumber.toString().length < 8) {
-      validationErrors.PhoneNumber = "Phone Number must have at least 8 digit";
+    if (inputs.PhoneNumber && inputs.PhoneNumber.length < 8) {
+      validationErrors.PhoneNumber = "Phone number must be at least 8 digits";
     }
 
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
       OnSave(formData);
+      setInputs({} as DataContact);
     }
-
-    setInputs({} as DataContact);
   };
 
   return (
@@ -63,64 +61,81 @@ const FormContact = (props: SubmitProps) => {
       onSubmit={handleSubmit}
       className={styleConfig.formStyle}
     >
-      <label htmlFor="Fullname" className={styleConfig.label}>
-        Full Name
-      </label>
-      <input
-        type="text"
-        placeholder="Enter your name (e.g. Febryan Hernanda)"
-        name="Fullname"
-        value={inputs.Fullname || ""}
-        onChange={handleChange}
-        required
-        className={styleConfig.inputField}
-      />
-      <label htmlFor="Email" className={styleConfig.label}>
-        Email
-      </label>
-      {errors.Email && (
-        <p className={styleConfig.errorMessage}>{errors.Email}</p>
-      )}
-      <input
-        type="email"
-        placeholder="Enter your email address (e.g. Febryan@gmail.com)"
-        name="Email"
-        value={inputs.Email || ""}
-        onChange={handleChange}
-        required
-        className={styleConfig.inputField}
-      />
-      <label htmlFor="Whatsapp Number" className={styleConfig.label}>
-        Whatsapp Number
-      </label>
-      {errors.PhoneNumber && (
-        <p className={styleConfig.errorMessage}>{errors.PhoneNumber}</p>
-      )}
-      <input
-        type="number"
-        placeholder="Enter your whatsapp number (e.g. 08123456789)"
-        name="PhoneNumber"
-        value={inputs.PhoneNumber || ""}
-        onChange={handleChange}
-        required
-        className={styleConfig.inputField}
-      />
-      <label htmlFor="Project Details " className={styleConfig.label}>
-        Project Details
-      </label>
-      <textarea
-        placeholder="Briefly describe your short project details (e.g. personal website, mobile app, etc.)"
-        rows={5}
-        name="ProjectDetails"
-        value={inputs.ProjectDetails || ""}
-        onChange={handleChange}
-        required
-        className={styleConfig.inputField}
-      />
+      <div className="flex flex-col gap-1.5">
+        <label htmlFor="Fullname" className={styleConfig.label}>
+          Full Name
+        </label>
+        <input
+          type="text"
+          placeholder="Enter your name (e.g. Febryan Hernanda)"
+          name="Fullname"
+          value={inputs.Fullname || ""}
+          onChange={handleChange}
+          required
+          className={styleConfig.inputField}
+        />
+      </div>
+
+      <div className="flex flex-col gap-1.5">
+        <div className="flex justify-between items-center">
+          <label htmlFor="Email" className={styleConfig.label}>
+            Email
+          </label>
+          {errors.Email && (
+            <p className={styleConfig.errorMessage}>{errors.Email}</p>
+          )}
+        </div>
+        <input
+          type="email"
+          placeholder="Enter your email address (e.g. febryan@gmail.com)"
+          name="Email"
+          value={inputs.Email || ""}
+          onChange={handleChange}
+          required
+          className={styleConfig.inputField}
+        />
+      </div>
+
+      <div className="flex flex-col gap-1.5">
+        <div className="flex justify-between items-center">
+          <label htmlFor="PhoneNumber" className={styleConfig.label}>
+            Whatsapp Number
+          </label>
+          {errors.PhoneNumber && (
+            <p className={styleConfig.errorMessage}>{errors.PhoneNumber}</p>
+          )}
+        </div>
+        <input
+          type="tel"
+          placeholder="Enter your whatsapp number (e.g. 081394566303)"
+          name="PhoneNumber"
+          value={inputs.PhoneNumber || ""}
+          onChange={handleChange}
+          required
+          className={styleConfig.inputField}
+        />
+      </div>
+
+      <div className="flex flex-col gap-1.5">
+        <label htmlFor="ProjectDetails" className={styleConfig.label}>
+          Project Details
+        </label>
+        <textarea
+          placeholder="Briefly describe your project details (e.g. personal website, e-commerce, custom app)"
+          rows={4}
+          name="ProjectDetails"
+          value={inputs.ProjectDetails || ""}
+          onChange={handleChange}
+          required
+          className={`${styleConfig.inputField} resize-none min-h-[100px]`}
+        />
+      </div>
+
       <Button type="submit" className={styleConfig.buttonStyle}>
         Submit
       </Button>
     </form>
   );
 };
+
 export default FormContact;

@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-
-import emailjs from "@emailjs/browser";
 import FormContact from "@/assets/features/FormContact/FormContact.component";
 import {
   Dialog,
@@ -12,12 +10,7 @@ import {
 import { Skeleton } from "@/components/ui/skeleton";
 
 import { formDataType, TriggerProps } from "./DialogContact.type";
-import {
-  PUBLIC_KEY,
-  SERVICE_ID,
-  styleConfig,
-  TEMPLATE_ID,
-} from "./DialogContact.config";
+import { styleConfig } from "./DialogContact.config";
 
 const DialogContact = (props: TriggerProps) => {
   const { isOpen, setIsOpen, initialMessage } = props;
@@ -29,20 +22,31 @@ const DialogContact = (props: TriggerProps) => {
     if (!showMessage) {
       setIsLoading(true);
 
-      emailjs
-        .send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY)
-        .then((response) => {
-          setIsLoading(false);
-          setShowMessage(true);
-          console.log("Email has been sent! ", response);
-        })
-        .catch((error: Error) => {
-          setIsLoading(false);
-          setErrorMessages(
-            "Failed to send email. Please try again later, or you can contact the available support on the website."
-          );
-          console.error("Email Failed to send : ", error);
-        });
+      const phone = "6281394566303";
+
+      // Formatting dynamic WhatsApp message for premium presentation
+      const formattedMessage = `Hi Febryan, I would like to discuss a project with you!
+
+*Contact Details:*
+- *Name:* ${formData.from_name}
+- *Email:* ${formData.email}
+- *WhatsApp Number:* ${formData.phone_number}
+
+*Message:*
+${formData.message}
+
+---
+Sent from febryanhernanda.github.io`;
+
+      const encodedText = encodeURIComponent(formattedMessage);
+      const whatsappUrl = `https://wa.me/${phone}?text=${encodedText}`;
+
+      // Simulate minor loading animation for smooth visual feedback before redirecting
+      setTimeout(() => {
+        setIsLoading(false);
+        setShowMessage(true);
+        window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+      }, 600);
     }
   };
 
@@ -55,23 +59,23 @@ const DialogContact = (props: TriggerProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogContent className={styleConfig.wrapper}>
-        <DialogHeader>
+        <DialogHeader className="space-y-1">
           <DialogTitle className={styleConfig.title}>
             Discuss Your Project Needs
           </DialogTitle>
+          {!isLoading && !showMessage && !errorMessages && (
+            <DialogDescription className={styleConfig.description}>
+              Share any questions or insights in the form below, and I’ll
+              respond within a day.
+            </DialogDescription>
+          )}
         </DialogHeader>
-        <hr />
-        {!isLoading && !showMessage && !errorMessages && (
-          <DialogDescription className={styleConfig.description}>
-            Share any questions or insights in the form below, and I’ll respond
-            within a day.
-          </DialogDescription>
-        )}
+        <hr className="border-neutral-100 dark:border-neutral-800 my-1" />
         {isLoading ? (
-          <Skeleton className={styleConfig.showMessage} />
+          <Skeleton className={styleConfig.loading} />
         ) : showMessage ? (
           <div className={styleConfig.showMessage}>
-            Thank you! I’ve received your message and will get back to you soon.
+            Redirecting you to WhatsApp... Thank you for reaching out!
           </div>
         ) : errorMessages ? (
           <div className={styleConfig.errorMessages}>{errorMessages}</div>
