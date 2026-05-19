@@ -50,6 +50,7 @@ export const SEO = ({
       {/* Basic Meta Tags */}
       <title>{title}</title>
       <meta name="description" content={description} />
+      <meta name="author" content="Febryan Hernanda Mashudi" />
       <link rel="canonical" href={canonicalUrl} />
 
       {/* Open Graph Tags */}
@@ -68,6 +69,13 @@ export const SEO = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImageUrl} />
+
+      {type === "article" && (
+        <>
+          <meta property="article:author" content="Febryan Hernanda Mashudi" />
+          <meta name="twitter:creator" content="Febryan Hernanda Mashudi" />
+        </>
+      )}
 
       {type === "article" && publishedAt && (
         <meta property="article:published_time" content={publishedAt} />

@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { articles } from "@/data/articles";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { SEO } from "@/assets/features";
+import { SEO, ArticleShare } from "@/assets/features";
 import { styleConfig } from "./ArticleDetailPage.config";
 import { IoArrowBackOutline } from "react-icons/io5";
 import { useLanguage } from "@/context/LanguageContext";
@@ -294,6 +294,13 @@ const ArticleDetailPage = () => {
           <div className={styleConfig.prose}>
             {renderArticleContent(article.content)}
           </div>
+
+          {/* Article Share Component */}
+          <ArticleShare
+            title={article.title}
+            excerpt={article.excerpt}
+            slug={article.slug}
+          />
 
           {/* Soft Conversion CTA Card */}
           <div className={styleConfig.ctaCard}>

@@ -132,6 +132,24 @@ const PageTemplate: React.FC<PageMetaData> = ({
         <meta name="twitter:image" content={twitterImage} />
         <meta name="twitter:image:alt" content={title} />
 
+        {/* Article specific Open Graph metadata */}
+        {isArticle && (
+          <>
+            <meta property="article:author" content="Febryan Hernanda Mashudi" />
+            <meta name="twitter:creator" content="Febryan Hernanda Mashudi" />
+            {publishedAt && (
+              <meta property="article:published_time" content={publishedAt} />
+            )}
+            {updatedAt && (
+              <meta property="article:modified_time" content={updatedAt} />
+            )}
+            {tags &&
+              tags.map((tag) => (
+                <meta key={tag} property="article:tag" content={tag} />
+              ))}
+          </>
+        )}
+
         {/* Structured Data (JSON-LD) */}
         <script
           type="application/ld+json"
