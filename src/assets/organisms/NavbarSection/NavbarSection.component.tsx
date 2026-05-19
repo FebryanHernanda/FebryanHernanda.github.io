@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink, useLocation, Link } from "react-router-dom";
+import { NavLink, useLocation, Link, useNavigate } from "react-router-dom";
 import { styleConfig } from "./NavbarSection.config";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
@@ -18,6 +18,7 @@ import { RiCustomerService2Fill } from "react-icons/ri";
 const NavbarSection = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   // Handle precise smooth scrolling with a custom offset when hash changes
   useEffect(() => {
@@ -41,6 +42,20 @@ const NavbarSection = () => {
       }
     }
   }, [location]);
+
+  // Sync scroll position with React Router hash (clear hash when at top of homepage)
+  useEffect(() => {
+    const handleScrollSync = () => {
+      if (location.pathname === "/" && location.hash) {
+        if (window.scrollY < 150) {
+          navigate(location.pathname + location.search, { replace: true });
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScrollSync, { passive: true });
+    return () => window.removeEventListener("scroll", handleScrollSync);
+  }, [location.pathname, location.hash, location.search, navigate]);
 
   return (
     <nav className={`${styleConfig.wrapper} w-full`}>
