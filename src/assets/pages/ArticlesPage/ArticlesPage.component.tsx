@@ -1,33 +1,46 @@
-import { Spinner } from "@/assets/atoms";
-// import { FeaturedCardArticle, MainCardArticle } from "@/assets/molecules";
+import { Title } from "@/assets/atoms";
+import { SEO } from "@/assets/features";
+import { ArticlesSection } from "@/assets/organisms";
+import { styleConfig } from "./ArticlesPage.config";
+import { useLanguage } from "@/context/LanguageContext";
 
 const ArticlesPage = () => {
-  return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 text-gray-800">
-      <Spinner className="w-20 mb-10 " />
-      <h1 className="mb-2 text-2xl font-semibold">Page is Under Development</h1>
-      <p className="max-w-md text-sm text-center text-muted-foreground">
-        We are preparing the best features for you. Please come back later.
-      </p>
-    </div>
+  const { language } = useLanguage();
 
-    /*  <div className="flex flex-col min-h-screen p-5 lg:p-10 ">
-      <div className="flex flex-row flex-wrap justify-center w-full gap-6 lg:flex-nowrap ">
-        <MainCardArticle />
-        <div className="flex flex-col hidden w-full gap-5 lg:w-auto lg:text-none xl:block">
+  const t = {
+    en: {
+      seoTitle: "Articles — Software Engineering & Web Architecture | Febryan Hernanda",
+      seoDesc: "Technical articles on software engineering, system design, scalable web architecture, and modern development practices by Febryan Hernanda.",
+      title: "Articles",
+      subtitle: "Thoughts on software engineering, scalable systems, UI/UX, and building better digital products.",
+    },
+    id: {
+      seoTitle: "Artikel — Rekayasa Perangkat Lunak & Arsitektur Web | Febryan Hernanda",
+      seoDesc: "Artikel teknis tentang rekayasa perangkat lunak, desain sistem, arsitektur web berskala, dan praktik pengembangan modern oleh Febryan Hernanda.",
+      title: "Artikel",
+      subtitle: "Pemikiran tentang rekayasa perangkat lunak, sistem berskala, UI/UX, dan membangun produk digital yang lebih baik.",
+    },
+  }[language];
+
+  return (
+    <>
+      <SEO
+        title={t.seoTitle}
+        description={t.seoDesc}
+        path="/articles"
+      />
+      <div className={styleConfig.wrapper}>
+        <div className={styleConfig.headerWrapper}>
+          <Title Label={t.title} Type="Bold" className="text-4xl sm:text-5xl" />
           <Title
-            Label="Other Featured Posts"
-            Type="Bold"
-            className="text-3xl text-center lg:text-left"
+            Label={t.subtitle}
+            Type="subTitle"
+            className="text-base sm:text-lg text-neutral-500 font-light mt-1"
           />
-          <div className="flex flex-col gap-5 mt-5 h-[540px] ">
-            <FeaturedCardArticle />
-            <FeaturedCardArticle />
-            <FeaturedCardArticle />
-            <FeaturedCardArticle />
-          </div>
         </div>
-      </div> */
+        <ArticlesSection />
+      </div>
+    </>
   );
 };
 
