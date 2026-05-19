@@ -20,8 +20,8 @@ const HeroContainer = () => {
           duration: 1,
           stagger: 0.2,
           ease: "power3.out",
-          delay: 0.2, // Small delay for hero to allow video to start maybe
-        }
+          delay: 0.2,
+        },
       );
     }, containerRef);
     return () => ctx.revert();
@@ -42,19 +42,18 @@ const HeroContainer = () => {
       </div>
       <div className={`${styleConfig.headline} hero-item`}>
         <Title
-          Label="Building Scalable,
-Robust Applications"
+          Label="Building Modern Websites & Digital Systems"
           Type="headline"
         />
         <Title
-          Label="As a Full-Stack Developer & Software Engineer, I architect and build high-performance, scalable web applications. I focus on clean code, system reliability, and delivering robust solutions that drive business growth."
+          Label="Software Engineer focused on building modern websites, scalable platforms, and thoughtful digital experiences with clean architecture and user-focused design."
           Type="subHeadline"
         />
       </div>
       <div className={`${styleConfig.subtitle} hero-item`}>
         <span className="fancy-pulse"></span>
         <Title
-          Label="Available for full-time position"
+          Label="Available for freelance projects & collaboration"
           Type="subTitle"
           className="font-bold"
         />

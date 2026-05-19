@@ -21,7 +21,7 @@ const FooterContainer = () => {
           <Title Label="Febryan Hernanda Mashudi" Type="semiBold" />
         </span>
         <span className={styleConfig.jobTitle}>
-          <Title Label="Fullstack Developer" Type="semiBold" />
+          <Title Label="Software Engineer" Type="semiBold" />
         </span>
       </div>
       <div className={styleConfig.rightWrapper}>

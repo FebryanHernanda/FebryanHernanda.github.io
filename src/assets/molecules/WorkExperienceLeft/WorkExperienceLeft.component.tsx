@@ -20,7 +20,7 @@ const WorkExperienceLeft = () => {
             Febryan Hernanda Mashudi
           </h1>
           <h2 className="text-lg md:text-xl font-medium text-zinc-500 dark:text-zinc-400">
-            Fullstack Developer
+            Software Engineer
           </h2>
         </div>
 

@@ -24,13 +24,13 @@ const DialogProfile = () => {
       </Avatar>
       <div className={styleConfig.textSize}>
         <h1 className={styleConfig.titleBold}>Febryan Hernanda Mashudi</h1>
-        <h4>Fullstack Developer</h4>
+        <h4>Software Engineer</h4>
       </div>
       <DialogDescription className={styleConfig.DialogDescription}>
-        My background in design strengthens my ability to craft exceptional user
-        experiences. I am actively seeking opportunities to contribute to
-        impactful projects within a collaborative team, where I can bring fresh
-        ideas, creativity, and a strong work ethic.
+        Software Engineer focused on building modern websites, scalable systems,
+        and thoughtful digital experiences. I enjoy combining clean engineering
+        with user-focused design to create products that are both functional and
+        visually refined.
       </DialogDescription>
       <div className={styleConfig.badgeLayout}>
         {dataBadge.map((data, index) => (

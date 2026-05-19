@@ -12,61 +12,43 @@ const styleConfig = {
 
 const dataBadge = [
   {
-    name: "Web Development",
-  },
-  {
     name: "Software Engineer",
   },
   {
-    name: "UI/UX Design",
+    name: "Web Development",
   },
   {
-    name: "Graphic Design",
+    name: "Frontend Architecture",
   },
   {
-    name: "ReactJs",
+    name: "Backend Systems",
   },
   {
-    name: "NextJs",
+    name: "UI/UX",
   },
   {
-    name: "Javascript",
+    name: "React",
   },
   {
-    name: "Typescript",
+    name: "TypeScript",
   },
   {
-    name: "Go-lang",
+    name: "Next.js",
   },
   {
-    name: "Redis",
+    name: "Go",
   },
   {
-    name: "Redux",
+    name: "Laravel",
   },
   {
-    name: "Adobe Xd",
+    name: "System Design",
   },
   {
-    name: "Figma",
+    name: "Dashboard Systems",
   },
   {
-    name: "Adobe Photoshop",
-  },
-  {
-    name: "Leadership",
-  },
-  {
-    name: "Detail Oriented",
-  },
-  {
-    name: "Communication",
-  },
-  {
-    name: "Problem Solving",
-  },
-  {
-    name: "Critical Thinking",
+    name: "Scalable Platforms",
   },
 ];
 
