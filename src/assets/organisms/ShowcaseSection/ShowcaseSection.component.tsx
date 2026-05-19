@@ -11,12 +11,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ShowcaseSection = () => {
   const [displayedItems, setDisplayedItems] = useState(
-    ShowcaseData.slice(0, 4)
+    ShowcaseData.slice(0, 4),
   );
   const [expanded, setExpanded] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [nextItems, setNextItems] = useState<typeof ShowcaseData>([]);
-  
+
   const containerRef = useRef<HTMLElement>(null);
   const prevCountRef = useRef(0);
 
@@ -49,7 +49,7 @@ const ShowcaseSection = () => {
               duration: 0.8,
               stagger: 0.1,
               ease: "power3.out",
-            }
+            },
           );
         } else {
           // Initial scroll-triggered animation
@@ -69,12 +69,12 @@ const ShowcaseSection = () => {
                 end: "bottom 20%",
                 toggleActions: "play none none reverse",
               },
-            }
+            },
           );
         }
       }
     }, containerRef);
-    
+
     // Update ref for next run
     prevCountRef.current = displayedItems.length;
 
@@ -116,15 +116,15 @@ const ShowcaseSection = () => {
         <div className={styleConfig.mediaWrapper}>
           {displayedItems.map((data, index) => (
             <div key={index} className="showcase-item">
-            <CardShowcase
-              media={data.media}
-              mediaAlt={data.mediaAlt}
-              titleContent={data.titleContent}
-              category={data.category}
-              descContent={data.descContent}
-              linkDemo={data.linkDemo}
-              tools={data.tools}
-            />
+              <CardShowcase
+                media={data.media}
+                mediaAlt={data.mediaAlt}
+                titleContent={data.titleContent}
+                category={data.category}
+                descContent={data.descContent}
+                linkDemo={data.linkDemo}
+                tools={data.tools}
+              />
             </div>
           ))}
           {ShowcaseData.length > 4 && (
